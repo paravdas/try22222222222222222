@@ -172,7 +172,7 @@
                     </div>
                     <!-- Integrations Floating Badges -->
                     <div class="hidden lg:block relative h-[380px]">
-                        <div class="absolute top-0 left-10 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
+                        <div class="absolute top-16 left-10 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
                             <i class="fa-brands fa-whatsapp text-green-500 text-3xl"></i>
                             <div>
                                 <p class="text-sm font-bold text-gray-800">WhatsApp API</p>
@@ -459,7 +459,1508 @@
             </div>
         </section>
 
+         <!-- Live Demos Portfolio Section -->
+    <section id="demo" class="pt-10 pb-8 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-12">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-primary font-semibold text-sm mb-4 border border-blue-200">Demo Websites</span>
+                <h2 class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Demo Website Designs
+                </h2>
+                <p class="text-xs font-normal text-gray-400 mt-1 tracking-wide uppercase">
+                    (For Display Purposes Only)
+                </p>
+                <p class="mt-4 text-lg text-gray-600 mx-auto leading-relaxed">
+                    Explore our live demo links across various property categories. Click on the links to preview the high-performance platforms we can build for your business.
+                </p>
+                <div class="mt-6 bg-blue-50 border border-blue-200 p-4 rounded-xl inline-block shadow-sm text-left sm:text-center">
+                    <p class="font-bold text-primary flex flex-col sm:flex-row items-start sm:items-center gap-2 text-sm sm:text-base">
+                        <i class="fa-solid fa-lightbulb text-yellow-500 text-xl flex-shrink-0"></i> 
+                        <span>Custom Design Offer: If you have a specific reference website or sample design in mind, we can build a completely custom platform tailored exactly to your vision!</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Interactive Category Instruction -->
+            <div class="text-center mb-3 flex items-center justify-center gap-2 animate-bounce">
+                <i class="fa-solid fa-hand-point-down text-primary text-lg"></i>
+                <span class="text-sm font-extrabold text-primary uppercase tracking-widest">Select Category Below</span>
+            </div>
+
+            <!-- Demo Category Tabs (Auto-Scrolling Marquee) -->
+            <div class="relative w-full mb-10 px-2 group cursor-pointer">
+                <div class="overflow-hidden bg-gray-100 p-1.5 rounded-full border border-gray-200 shadow-inner w-full relative">
+                    <!-- Left & Right Fades for smooth look -->
+                    <div class="absolute left-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-r from-gray-100 to-transparent z-10 pointer-events-none rounded-l-full"></div>
+                    <div class="absolute right-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-l from-gray-100 to-transparent z-10 pointer-events-none rounded-r-full"></div>
+
+                    <!-- Scrolling Track -->
+                    <div class="flex animate-scroll-tabs gap-2 items-center">
+                        <!-- SET 1 -->
+                        <button onclick="showDemoCategory('plots')" data-btn-category="plots" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-primary text-white shadow-md border-transparent">Plots & Land</button>
+                        <button onclick="showDemoCategory('apartments')" data-btn-category="apartments" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Apartments & Flats</button>
+                        <button onclick="showDemoCategory('dealers')" data-btn-category="dealers" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Property Dealers</button>
+                        <button onclick="showDemoCategory('brokers')" data-btn-category="brokers" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Property Brokers</button>
+                        <button onclick="showDemoCategory('commercial')" data-btn-category="commercial" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Commercial Property</button>
+                        <button onclick="showDemoCategory('usa')" data-btn-category="usa" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">USA</button>
+                        <button onclick="showDemoCategory('uk')" data-btn-category="uk" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">UK</button>
+                        <button onclick="showDemoCategory('uae')" data-btn-category="uae" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">UAE</button>
+                        <button onclick="showDemoCategory('australia')" data-btn-category="australia" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Australia</button>
+                        <button onclick="showDemoCategory('singapore')" data-btn-category="singapore" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Singapore</button>
+                        <button onclick="showDemoCategory('hk')" data-btn-category="hk" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Hong Kong</button>
+                        <button onclick="showDemoCategory('china')" data-btn-category="china" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">China</button>
+
+                        <!-- SET 2 (Duplicate for Seamless Loop) -->
+                        <button onclick="showDemoCategory('plots')" data-btn-category="plots" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-primary text-white shadow-md border-transparent">Plots & Land</button>
+                        <button onclick="showDemoCategory('apartments')" data-btn-category="apartments" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Apartments & Flats</button>
+                        <button onclick="showDemoCategory('dealers')" data-btn-category="dealers" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Property Dealers</button>
+                        <button onclick="showDemoCategory('brokers')" data-btn-category="brokers" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Property Brokers</button>
+                        <button onclick="showDemoCategory('commercial')" data-btn-category="commercial" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Commercial Property</button>
+                        <button onclick="showDemoCategory('usa')" data-btn-category="usa" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">USA</button>
+                        <button onclick="showDemoCategory('uk')" data-btn-category="uk" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">UK</button>
+                        <button onclick="showDemoCategory('uae')" data-btn-category="uae" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">UAE</button>
+                        <button onclick="showDemoCategory('australia')" data-btn-category="australia" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Australia</button>
+                        <button onclick="showDemoCategory('singapore')" data-btn-category="singapore" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Singapore</button>
+                        <button onclick="showDemoCategory('hk')" data-btn-category="hk" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">Hong Kong</button>
+                        <button onclick="showDemoCategory('china')" data-btn-category="china" class="demo-btn px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-bold text-[12px] sm:text-base whitespace-nowrap flex-shrink-0 transition-all bg-transparent text-gray-500 hover:text-gray-900 border-transparent">China</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demo Links Container -->
+            <div class="bg-gray-50 rounded-3xl p-6 md:p-10 border border-gray-200 shadow-inner">
+                
+                <!-- Category 1: Plots & Land -->
+                <div id="demo-plots" class="demo-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.shriramproperties.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Shriram Properties</h4><p class="text-xs text-blue-500 mt-1">shriramproperties.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.godrejproperties.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Godrej Properties</h4><p class="text-xs text-blue-500 mt-1">godrejproperties.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.puravankara.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Puravankara</h4><p class="text-xs text-blue-500 mt-1">puravankara.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.prestigeconstructions.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Prestige Group</h4><p class="text-xs text-blue-500 mt-1">prestigeconstructions.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.dlf.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">DLF Limited</h4><p class="text-xs text-blue-500 mt-1">dlf.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.centuryrealestate.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Century Real Estate</h4><p class="text-xs text-blue-500 mt-1">centuryrealestate.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.rohanbuilders.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Rohan Builders</h4><p class="text-xs text-blue-500 mt-1">rohanbuilders.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.tvsemerald.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">TVS Emerald</h4><p class="text-xs text-blue-500 mt-1">tvsemerald.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.mahindralifespaces.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Mahindra Lifespaces</h4><p class="text-xs text-blue-500 mt-1">mahindralifespaces.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.brigadegroup.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Brigade Group</h4><p class="text-xs text-blue-500 mt-1">brigadegroup.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 2: Apartments -->
+                <div id="demo-apartments" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.lodhagroup.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Lodha Group</h4><p class="text-xs text-blue-500 mt-1">lodhagroup.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.sobha.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Sobha Limited</h4><p class="text-xs text-blue-500 mt-1">sobha.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.oberoirealty.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Oberoi Realty</h4><p class="text-xs text-blue-500 mt-1">oberoirealty.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.hiranandani.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Hiranandani Group</h4><p class="text-xs text-blue-500 mt-1">hiranandani.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.tatarealty.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Tata Housing</h4><p class="text-xs text-blue-500 mt-1">tatarealty.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.shapoorjipallonji.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Shapoorji Pallonji</h4><p class="text-xs text-blue-500 mt-1">shapoorjipallonji.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.sattvagroup.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Sattva Group</h4><p class="text-xs text-blue-500 mt-1">sattvagroup.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.koltepatil.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Kolte Patil</h4><p class="text-xs text-blue-500 mt-1">koltepatil.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.kalpataru.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Kalpataru Group</h4><p class="text-xs text-blue-500 mt-1">kalpataru.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.piramalrealty.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Piramal Realty</h4><p class="text-xs text-blue-500 mt-1">piramalrealty.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 3: Property Dealers -->
+                <div id="demo-dealers" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.magicbricks.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">MagicBricks</h4><p class="text-xs text-blue-500 mt-1">magicbricks.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.99acres.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">99acres</h4><p class="text-xs text-blue-500 mt-1">99acres.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://housing.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Housing.com</h4><p class="text-xs text-blue-500 mt-1">housing.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.nobroker.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">NoBroker</h4><p class="text-xs text-blue-500 mt-1">nobroker.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.squareyards.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Square Yards</h4><p class="text-xs text-blue-500 mt-1">squareyards.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.makaan.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Makaan</h4><p class="text-xs text-blue-500 mt-1">makaan.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.proptiger.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">PropTiger</h4><p class="text-xs text-blue-500 mt-1">proptiger.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.commonfloor.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">CommonFloor</h4><p class="text-xs text-blue-500 mt-1">commonfloor.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.indiaproperty.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">IndiaProperty</h4><p class="text-xs text-blue-500 mt-1">indiaproperty.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.realestateindia.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">RealEstateIndia</h4><p class="text-xs text-blue-500 mt-1">realestateindia.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 4: Property Brokers -->
+                <div id="demo-brokers" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.jll.co.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">JLL India</h4><p class="text-xs text-blue-500 mt-1">jll.co.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.cbre.co.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">CBRE India</h4><p class="text-xs text-blue-500 mt-1">cbre.co.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.knightfrank.co.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Knight Frank</h4><p class="text-xs text-blue-500 mt-1">knightfrank.co.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.colliers.com/en-in" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Colliers India</h4><p class="text-xs text-blue-500 mt-1">colliers.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.cushmanwakefield.com/en/india" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Cushman & Wakefield</h4><p class="text-xs text-blue-500 mt-1">cushmanwakefield.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.savills.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Savills India</h4><p class="text-xs text-blue-500 mt-1">savills.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.anarock.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Anarock</h4><p class="text-xs text-blue-500 mt-1">anarock.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.investorsclinic.in/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Investors Clinic</h4><p class="text-xs text-blue-500 mt-1">investorsclinic.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.360realtors.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">360 Realtors</h4><p class="text-xs text-blue-500 mt-1">360realtors.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.guptasen.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Gupta & Sen</h4><p class="text-xs text-blue-500 mt-1">guptasen.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 5: Commercial Property -->
+                <div id="demo-commercial" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.dlf.in/commercial" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">DLF Commercial</h4><p class="text-xs text-blue-500 mt-1">dlf.in</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.embassyofficeparks.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Embassy Office Parks</h4><p class="text-xs text-blue-500 mt-1">embassyofficeparks.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.rmzcorp.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">RMZ Corp</h4><p class="text-xs text-blue-500 mt-1">rmzcorp.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.krahejacorp.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">K Raheja Corp</h4><p class="text-xs text-blue-500 mt-1">krahejacorp.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.phoenixmills.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Phoenix Mills</h4><p class="text-xs text-blue-500 mt-1">phoenixmills.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.brookfieldproperties.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Brookfield Properties</h4><p class="text-xs text-blue-500 mt-1">brookfieldproperties.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.mindspacereit.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Mindspace Business Parks</h4><p class="text-xs text-blue-500 mt-1">mindspacereit.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.ltrealty.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">L&T Realty</h4><p class="text-xs text-blue-500 mt-1">ltrealty.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.bhartiyacity.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Bhartiya City</h4><p class="text-xs text-blue-500 mt-1">bhartiyacity.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.wtcindia.org/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">World Trade Center India</h4><p class="text-xs text-blue-500 mt-1">wtcindia.org</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 6: USA -->
+                <div id="demo-usa" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.zillow.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Zillow USA</h4><p class="text-xs text-blue-500 mt-1">zillow.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.realtor.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Realtor.com</h4><p class="text-xs text-blue-500 mt-1">realtor.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.trulia.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Trulia</h4><p class="text-xs text-blue-500 mt-1">trulia.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.redfin.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Redfin</h4><p class="text-xs text-blue-500 mt-1">redfin.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.century21.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Century 21</h4><p class="text-xs text-blue-500 mt-1">century21.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.compass.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Compass</h4><p class="text-xs text-blue-500 mt-1">compass.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 7: UK -->
+                <div id="demo-uk" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.rightmove.co.uk/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Rightmove UK</h4><p class="text-xs text-blue-500 mt-1">rightmove.co.uk</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.zoopla.co.uk/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Zoopla</h4><p class="text-xs text-blue-500 mt-1">zoopla.co.uk</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.onthemarket.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">OnTheMarket</h4><p class="text-xs text-blue-500 mt-1">onthemarket.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.savills.co.uk/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Savills UK</h4><p class="text-xs text-blue-500 mt-1">savills.co.uk</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.knightfrank.co.uk/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Knight Frank UK</h4><p class="text-xs text-blue-500 mt-1">knightfrank.co.uk</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.foxtons.co.uk/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Foxtons</h4><p class="text-xs text-blue-500 mt-1">foxtons.co.uk</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 8: UAE -->
+                <div id="demo-uae" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.propertyfinder.ae/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Property Finder UAE</h4><p class="text-xs text-blue-500 mt-1">propertyfinder.ae</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.bayut.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Bayut</h4><p class="text-xs text-blue-500 mt-1">bayut.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.emaar.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Emaar Properties</h4><p class="text-xs text-blue-500 mt-1">emaar.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.damacproperties.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Damac Properties</h4><p class="text-xs text-blue-500 mt-1">damacproperties.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://dubai.dubizzle.com/property-for-sale/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Dubizzle Real Estate</h4><p class="text-xs text-blue-500 mt-1">dubizzle.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.nakheel.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Nakheel</h4><p class="text-xs text-blue-500 mt-1">nakheel.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 9: Australia -->
+                <div id="demo-australia" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.realestate.com.au/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Realestate.com.au</h4><p class="text-xs text-blue-500 mt-1">realestate.com.au</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.domain.com.au/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Domain Australia</h4><p class="text-xs text-blue-500 mt-1">domain.com.au</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.raywhite.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Ray White</h4><p class="text-xs text-blue-500 mt-1">raywhite.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.ljhooker.com.au/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">LJ Hooker</h4><p class="text-xs text-blue-500 mt-1">ljhooker.com.au</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.mcgrath.com.au/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">McGrath Estate Agents</h4><p class="text-xs text-blue-500 mt-1">mcgrath.com.au</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.property.com.au/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Property.com.au</h4><p class="text-xs text-blue-500 mt-1">property.com.au</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 10: Singapore -->
+                <div id="demo-singapore" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.propertyguru.com.sg/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">PropertyGuru SG</h4><p class="text-xs text-blue-500 mt-1">propertyguru.com.sg</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.99.co/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">99.co</h4><p class="text-xs text-blue-500 mt-1">99.co</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.srx.com.sg/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">SRX Property</h4><p class="text-xs text-blue-500 mt-1">srx.com.sg</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.edgeprop.sg/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">EdgeProp Singapore</h4><p class="text-xs text-blue-500 mt-1">edgeprop.sg</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.era.com.sg/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">ERA Singapore</h4><p class="text-xs text-blue-500 mt-1">era.com.sg</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.huttonsgroup.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Huttons Asia</h4><p class="text-xs text-blue-500 mt-1">huttonsgroup.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 11: Hong Kong -->
+                <div id="demo-hk" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://hk.centanet.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Centaline Property</h4><p class="text-xs text-blue-500 mt-1">hk.centanet.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.midland.com.hk/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Midland Realty</h4><p class="text-xs text-blue-500 mt-1">midland.com.hk</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.squarefoot.com.hk/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Squarefoot HK</h4><p class="text-xs text-blue-500 mt-1">squarefoot.com.hk</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.spacious.hk/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Spacious</h4><p class="text-xs text-blue-500 mt-1">spacious.hk</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.property.hk/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Property.hk</h4><p class="text-xs text-blue-500 mt-1">property.hk</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.okay.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">OKAY.com</h4><p class="text-xs text-blue-500 mt-1">okay.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+
+                <!-- Category 12: China -->
+                <div id="demo-china" class="demo-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.fang.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Fang.com</h4><p class="text-xs text-blue-500 mt-1">fang.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.anjuke.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Anjuke</h4><p class="text-xs text-blue-500 mt-1">anjuke.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://bj.lianjia.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Lianjia</h4><p class="text-xs text-blue-500 mt-1">lianjia.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://bj.ke.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Beike (Ke.com)</h4><p class="text-xs text-blue-500 mt-1">ke.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.qfang.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Qfang</h4><p class="text-xs text-blue-500 mt-1">qfang.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                    <a href="https://www.leju.com/" target="_blank" class="bg-white p-4 rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition group flex justify-between items-center">
+                        <div><h4 class="font-bold text-gray-900 group-hover:text-primary">Leju</h4><p class="text-xs text-blue-500 mt-1">leju.com</p></div><i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-primary"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Custom Design Exclusivity Strip -->
+            <div class="mt-8 max-w-5xl mx-auto bg-gray-50 border border-gray-200/60 rounded-xl p-3 sm:p-4 flex items-start sm:items-center gap-3 sm:gap-4 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                <i class="fa-solid fa-shield-halved text-gray-400 text-lg flex-shrink-0 mt-0.5 sm:mt-0"></i>
+                <p class="text-[10px] sm:text-xs text-gray-500 leading-snug sm:leading-relaxed text-left sm:text-center w-full">
+                    Every website we create is 100% custom-designed and unique, built exclusively for each client. We never copy, reuse, or replicate designs—once a design is created for you, it will not be used for any other customer. You will have full ownership and exclusive copyright of your website design.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Features Section (Fully Recovered & Fixed) -->
+    <section class="pt-8 pb-8 bg-green-50 border-t border-green-100 relative z-10" id="whatsapp-integration">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-200 text-green-800 font-bold text-sm mb-4 shadow-sm border border-green-300 animate-bounce">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    WhatsApp Integration
+                </div>
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Choose Your Custom WhatsApp Design</h2>
+                <p class="text-gray-600 text-lg">
+                    To ensure your visitors immediately notice the WhatsApp chat, we go beyond standard buttons! Explore 30 unique, animated, and eye-catching designs below. Every design ensures the WhatsApp icon is highly visible while adding a fun, interactive element:
+                </p>
+            </div>
+
+            <!-- Scrolling WhatsApp Button Banner (Seamless strip without numbers and without background box) -->
+            <div class="relative w-full overflow-hidden h-16 flex items-center mb-12">
+                <!-- Fade Effects on Edges -->
+                <div class="absolute left-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-r from-green-50 to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-l from-green-50 to-transparent z-10 pointer-events-none"></div>
+
+                <!-- Scrolling Track -->
+                <div class="flex animate-scroll-x gap-8 md:gap-12 items-center px-4 hover:cursor-pointer">
+                    
+                    <!-- SET 1 (30 Mini Buttons - No Numbers) -->
+                    <div class="shrink-0 flex flex-col items-center"><div class="flex flex-col items-center hover:-translate-y-1 transition-transform"><i class="fa-solid fa-flying-saucer text-gray-600 text-xl drop-shadow-sm"></i><div class="w-0 h-0 border-l-[6px] border-r-[6px] border-b-[10px] border-l-transparent border-r-transparent border-b-green-400/40 mt-0.5"></div><i class="fa-brands fa-whatsapp text-[#25D366] text-xl animate-bounce -mt-1 bg-white rounded-full"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center shadow-sm"><div class="absolute inset-0 rounded-full border border-[#25D366] animate-ping opacity-75"></div><i class="fa-brands fa-whatsapp text-white text-[18px] relative z-10"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-white rounded-full px-2 py-1.5 shadow-sm border border-gray-100 flex items-center gap-1.5"><div class="flex gap-[2px]"><div class="w-1 h-1 bg-gray-400 rounded-full animate-bounce"></div><div class="w-1 h-1 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div><div class="w-1 h-1 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div></div><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative hover:-translate-y-1 transition"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop" class="w-8 h-8 rounded-full border border-gray-200 object-cover"><div class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-[#25D366] rounded-full flex items-center justify-center border border-white"><i class="fa-brands fa-whatsapp text-white text-[8px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative hover:scale-110 transition"><div class="w-8 h-8 bg-[#25D366] rounded-t-full rounded-bl-full rounded-br-sm flex items-center justify-center shadow-sm border border-green-500"><i class="fa-brands fa-whatsapp text-white text-xl"></i></div><div class="absolute -bottom-1 left-2 w-1.5 h-3 bg-[#25D366] rounded-full animate-bounce"></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-[#25D366] rounded-full flex items-center justify-center shadow-sm overflow-hidden group hover:w-20 transition-all duration-300 w-8 h-8"><i class="fa-brands fa-whatsapp text-white text-[18px]"></i><span class="text-[8px] font-bold text-white ml-1 opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto transition-all">Chat</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="flex items-center gap-1.5 bg-white px-2 py-1.5 rounded-full shadow-sm border border-green-100 hover:shadow-md hover:scale-105 transition cursor-pointer"><div class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-[#25D366]"></span></div><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px]"></i><span class="text-[8px] font-bold text-gray-600">Live</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative w-8 h-8 bg-[#25D366] rounded-t-full flex items-center justify-center hover:-translate-y-1 transition group shadow-sm border-b-0 border border-green-500"><i class="fa-brands fa-whatsapp text-white text-2xl -mt-1"></i><div class="absolute bottom-0 left-0 w-full flex justify-between px-[1px]"><div class="w-1.5 h-1.5 bg-gray-50 border border-green-100 rounded-full translate-y-0.5"></div><div class="w-1.5 h-1.5 bg-gray-50 border border-green-100 rounded-full translate-y-0.5"></div><div class="w-1.5 h-1.5 bg-gray-50 border border-green-100 rounded-full translate-y-0.5"></div></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm border border-gray-200 hover:shadow-md transition"><i class="fa-brands fa-whatsapp text-[#25D366] text-[22px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex flex-col items-center hover:scale-110 transition cursor-pointer"><div class="flex gap-1 mb-0.5"><div class="w-1.5 h-1.5 bg-[#25D366] rounded-full"></div><div class="w-2 h-2 bg-[#25D366] rounded-full -translate-y-0.5"></div><div class="w-1.5 h-1.5 bg-[#25D366] rounded-full"></div></div><div class="bg-white rounded-full shadow-sm border border-gray-100"><i class="fa-brands fa-whatsapp text-[#25D366] text-[22px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-white/40 backdrop-blur-md px-2 py-1 rounded-full shadow-sm border border-white flex items-center gap-1"><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px]"></i><span class="text-[8px] font-semibold text-gray-800">Support</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex items-center justify-center hover:scale-110 transition group"><div class="absolute -top-1 right-0 w-2 h-2 border-t border-r border-gray-600 rounded-tr-full"></div><i class="fa-solid fa-sparkles text-red-500 text-[8px] absolute -top-1.5 -right-1 animate-ping"></i><div class="w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center shadow-sm border border-gray-700"><i class="fa-brands fa-whatsapp text-[#25D366] text-xl group-hover:scale-125 transition drop-shadow-sm"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex items-center justify-center hover:rotate-12 transition"><i class="fa-solid fa-magnifying-glass text-blue-500 text-[30px] absolute -rotate-12 drop-shadow-sm opacity-80"></i><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px] relative bg-white rounded-full shadow-sm z-10"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="flex bg-white rounded-full shadow-sm border border-gray-200 overflow-hidden"><div class="px-2 py-1.5 bg-gray-50 border-r border-gray-200 hover:bg-gray-100 transition"><i class="fa-solid fa-phone text-gray-500 text-[10px]"></i></div><div class="px-2 py-1.5 bg-green-50 hover:bg-green-100 transition"><i class="fa-brands fa-whatsapp text-[#25D366] text-[14px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative w-8 h-8 flex items-center justify-center group cursor-pointer hover:scale-105 transition"><div class="absolute inset-0 border-[1.5px] border-dashed border-[#25D366] rounded-full group-hover:animate-[spin_3s_linear_infinite] opacity-60"></div><div class="w-6 h-6 bg-[#25D366] rounded-full flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-white text-[12px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="w-8 h-8 rounded-full border-2 border-[#25D366] bg-transparent flex items-center justify-center hover:bg-green-50 transition"><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-[#25D366] px-2 py-1.5 rounded-md shadow-sm flex items-center gap-1.5"><i class="fa-solid fa-house-chimney text-white/80 text-[8px]"></i><i class="fa-brands fa-whatsapp text-white text-[14px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="group flex items-center bg-white border border-gray-200 rounded-full shadow-sm overflow-hidden hover:pr-2 hover:border-green-300 transition-all duration-300 cursor-pointer"><div class="w-8 h-8 bg-green-50 flex items-center justify-center rounded-full group-hover:bg-[#25D366] transition-colors"><i class="fa-brands fa-whatsapp text-[#25D366] group-hover:text-white text-[18px]"></i></div><span class="text-[8px] font-bold text-gray-700 w-0 opacity-0 group-hover:w-auto group-hover:opacity-100 group-hover:ml-1 transition-all overflow-hidden">Talk</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="w-8 h-8 bg-gradient-to-br from-[#25D366] to-green-500 flex items-center justify-center shadow-lg animate-pulse hover:scale-110 transition cursor-pointer" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"><i class="fa-brands fa-whatsapp text-white text-[16px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex flex-col items-center group mt-1"><i class="fa-solid fa-music text-pink-500 absolute -top-1 -left-1 text-[6px] opacity-0 group-hover:opacity-100 animate-bounce"></i><i class="fa-solid fa-music text-purple-500 absolute -top-0 -right-1 text-[5px] opacity-0 group-hover:opacity-100 animate-bounce delay-150"></i><div class="relative flex items-center justify-center group-hover:animate-pulse"><i class="fa-solid fa-headphones text-gray-800 text-[26px] absolute z-20 group-hover:scale-110 transition drop-shadow-sm -mt-1"></i><i class="fa-brands fa-whatsapp text-[#25D366] text-[24px] relative z-10 bg-white rounded-full"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center shadow-[0_0_8px_#25D366]"><i class="fa-brands fa-whatsapp text-[#25D366] text-[18px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm border border-green-100 hover:scale-110 transition cursor-pointer"><div class="absolute w-full h-full rounded-full border-[1.5px] border-green-400 scale-150 opacity-0 animate-ping" style="animation-duration: 2.5s;"></div><i class="fa-brands fa-whatsapp text-[#25D366] text-[18px] relative z-10"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-blue-50 px-2 py-1.5 rounded-full border border-blue-200 flex items-center gap-1 shadow-sm"><i class="fa-brands fa-whatsapp text-[#25D366] text-[14px]"></i><span class="text-[8px] font-bold text-blue-800">Sales</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-gradient-to-br from-[#25D366] to-green-600 w-8 h-8 rounded-t-xl rounded-bl-xl rounded-br-sm flex items-center justify-center shadow-sm animate-float-btn cursor-pointer border border-green-500 hover:scale-105 transition"><i class="fa-brands fa-whatsapp text-white text-[16px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center shadow-sm group hover:-translate-y-1 transition overflow-hidden cursor-pointer"><div class="absolute -inset-3 bg-gradient-to-r from-transparent via-[#25D366]/60 to-transparent group-hover:animate-fast-spin"></div><div class="w-[30px] h-[30px] bg-gray-800 rounded-lg flex items-center justify-center z-10 border border-gray-700"><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="flex items-center justify-center relative hover:-translate-y-1 transition"><i class="fa-solid fa-wing text-cyan-300 text-xl absolute -left-2 scale-x-[-1] animate-pulse drop-shadow-sm"></i><i class="fa-brands fa-whatsapp text-[#25D366] text-[28px] relative z-10 drop-shadow-sm bg-white rounded-full"></i><i class="fa-solid fa-wing text-cyan-300 text-xl absolute -right-2 animate-pulse drop-shadow-sm"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-gray-800 px-2 py-1 rounded-full flex items-center gap-1 shadow-sm border border-gray-700"><i class="fa-brands fa-whatsapp text-[#25D366] text-[14px]"></i><span class="text-[8px] text-gray-200">Connect</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex items-center justify-center group hover:translate-x-1.5 transition-transform"><div class="absolute -left-1.5 w-4 h-5 bg-red-600 rounded-l-full -z-10 group-hover:w-6 group-hover:-left-3 transition-all shadow-sm"></div><div class="bg-white rounded-full shadow-sm border border-gray-100 z-10 group-hover:scale-110 transition-transform"><i class="fa-brands fa-whatsapp text-[#25D366] text-[26px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex flex-col items-center group mt-1"><i class="fa-solid fa-hat-chef text-gray-800 text-[20px] absolute -top-2 z-20 group-hover:scale-125 transition drop-shadow-sm"></i><div class="bg-white rounded-full shadow-sm border border-gray-100 mt-1 group-hover:animate-wiggle"><i class="fa-brands fa-whatsapp text-[#25D366] text-[26px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative w-9 h-9 bg-blue-100/60 border border-blue-300 rounded-full flex items-center justify-center shadow-sm group hover:scale-125 hover:bg-white hover:border-green-200 transition-all duration-500 overflow-visible cursor-pointer"><i class="fa-brands fa-whatsapp text-[#25D366] text-[18px] opacity-70 group-hover:opacity-100 group-hover:text-[28px] transition-all duration-500"></i></div></div>
+
+                    <!-- SET 2 (Duplicate for Infinite Scroll) -->
+                    <div class="shrink-0 flex flex-col items-center"><div class="flex flex-col items-center hover:-translate-y-1 transition-transform"><i class="fa-solid fa-flying-saucer text-gray-600 text-xl drop-shadow-sm"></i><div class="w-0 h-0 border-l-[6px] border-r-[6px] border-b-[10px] border-l-transparent border-r-transparent border-b-green-400/40 mt-0.5"></div><i class="fa-brands fa-whatsapp text-[#25D366] text-xl animate-bounce -mt-1 bg-white rounded-full"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center shadow-sm"><div class="absolute inset-0 rounded-full border border-[#25D366] animate-ping opacity-75"></div><i class="fa-brands fa-whatsapp text-white text-[18px] relative z-10"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-white rounded-full px-2 py-1.5 shadow-sm border border-gray-100 flex items-center gap-1.5"><div class="flex gap-[2px]"><div class="w-1 h-1 bg-gray-400 rounded-full animate-bounce"></div><div class="w-1 h-1 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div><div class="w-1 h-1 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div></div><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative hover:-translate-y-1 transition"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop" class="w-8 h-8 rounded-full border border-gray-200 object-cover"><div class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-[#25D366] rounded-full flex items-center justify-center border border-white"><i class="fa-brands fa-whatsapp text-white text-[8px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative hover:scale-110 transition"><div class="w-8 h-8 bg-[#25D366] rounded-t-full rounded-bl-full rounded-br-sm flex items-center justify-center shadow-sm border border-green-500"><i class="fa-brands fa-whatsapp text-white text-xl"></i></div><div class="absolute -bottom-1 left-2 w-1.5 h-3 bg-[#25D366] rounded-full animate-bounce"></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-[#25D366] rounded-full flex items-center justify-center shadow-sm overflow-hidden group hover:w-20 transition-all duration-300 w-8 h-8"><i class="fa-brands fa-whatsapp text-white text-[18px]"></i><span class="text-[8px] font-bold text-white ml-1 opacity-0 w-0 group-hover:opacity-100 group-hover:w-auto transition-all">Chat</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="flex items-center gap-1.5 bg-white px-2 py-1.5 rounded-full shadow-sm border border-green-100 hover:shadow-md hover:scale-105 transition cursor-pointer"><div class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-[#25D366]"></span></div><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px]"></i><span class="text-[8px] font-bold text-gray-600">Live</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative w-8 h-8 bg-[#25D366] rounded-t-full flex items-center justify-center hover:-translate-y-1 transition group shadow-sm border-b-0 border border-green-500"><i class="fa-brands fa-whatsapp text-white text-2xl -mt-1"></i><div class="absolute bottom-0 left-0 w-full flex justify-between px-[1px]"><div class="w-1.5 h-1.5 bg-gray-50 border border-green-100 rounded-full translate-y-0.5"></div><div class="w-1.5 h-1.5 bg-gray-50 border border-green-100 rounded-full translate-y-0.5"></div><div class="w-1.5 h-1.5 bg-gray-50 border border-green-100 rounded-full translate-y-0.5"></div></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm border border-gray-200 hover:shadow-md transition"><i class="fa-brands fa-whatsapp text-[#25D366] text-[22px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex flex-col items-center hover:scale-110 transition cursor-pointer"><div class="flex gap-1 mb-0.5"><div class="w-1.5 h-1.5 bg-[#25D366] rounded-full"></div><div class="w-2 h-2 bg-[#25D366] rounded-full -translate-y-0.5"></div><div class="w-1.5 h-1.5 bg-[#25D366] rounded-full"></div></div><div class="bg-white rounded-full shadow-sm border border-gray-100"><i class="fa-brands fa-whatsapp text-[#25D366] text-[22px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-white/40 backdrop-blur-md px-2 py-1 rounded-full shadow-sm border border-white flex items-center gap-1"><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px]"></i><span class="text-[8px] font-semibold text-gray-800">Support</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex items-center justify-center hover:scale-110 transition group"><div class="absolute -top-1 right-0 w-2 h-2 border-t border-r border-gray-600 rounded-tr-full"></div><i class="fa-solid fa-sparkles text-red-500 text-[8px] absolute -top-1.5 -right-1 animate-ping"></i><div class="w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center shadow-sm border border-gray-700"><i class="fa-brands fa-whatsapp text-[#25D366] text-xl group-hover:scale-125 transition drop-shadow-sm"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex items-center justify-center hover:rotate-12 transition"><i class="fa-solid fa-magnifying-glass text-blue-500 text-[30px] absolute -rotate-12 drop-shadow-sm opacity-80"></i><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px] relative bg-white rounded-full shadow-sm z-10"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="flex bg-white rounded-full shadow-sm border border-gray-200 overflow-hidden"><div class="px-2 py-1.5 bg-gray-50 border-r border-gray-200 hover:bg-gray-100 transition"><i class="fa-solid fa-phone text-gray-500 text-[10px]"></i></div><div class="px-2 py-1.5 bg-green-50 hover:bg-green-100 transition"><i class="fa-brands fa-whatsapp text-[#25D366] text-[14px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative w-8 h-8 flex items-center justify-center group cursor-pointer hover:scale-105 transition"><div class="absolute inset-0 border-[1.5px] border-dashed border-[#25D366] rounded-full group-hover:animate-[spin_3s_linear_infinite] opacity-60"></div><div class="w-6 h-6 bg-[#25D366] rounded-full flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-white text-[12px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="w-8 h-8 rounded-full border-2 border-[#25D366] bg-transparent flex items-center justify-center hover:bg-green-50 transition"><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-[#25D366] px-2 py-1.5 rounded-md shadow-sm flex items-center gap-1.5"><i class="fa-solid fa-house-chimney text-white/80 text-[8px]"></i><i class="fa-brands fa-whatsapp text-white text-[14px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="group flex items-center bg-white border border-gray-200 rounded-full shadow-sm overflow-hidden hover:pr-2 hover:border-green-300 transition-all duration-300 cursor-pointer"><div class="w-8 h-8 bg-green-50 flex items-center justify-center rounded-full group-hover:bg-[#25D366] transition-colors"><i class="fa-brands fa-whatsapp text-[#25D366] group-hover:text-white text-[18px]"></i></div><span class="text-[8px] font-bold text-gray-700 w-0 opacity-0 group-hover:w-auto group-hover:opacity-100 group-hover:ml-1 transition-all overflow-hidden">Talk</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="w-8 h-8 bg-gradient-to-br from-[#25D366] to-green-500 flex items-center justify-center shadow-lg animate-pulse hover:scale-110 transition cursor-pointer" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"><i class="fa-brands fa-whatsapp text-white text-[16px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex flex-col items-center group mt-1"><i class="fa-solid fa-music text-pink-500 absolute -top-1 -left-1 text-[6px] opacity-0 group-hover:opacity-100 animate-bounce"></i><i class="fa-solid fa-music text-purple-500 absolute -top-0 -right-1 text-[5px] opacity-0 group-hover:opacity-100 animate-bounce delay-150"></i><div class="relative flex items-center justify-center group-hover:animate-pulse"><i class="fa-solid fa-headphones text-gray-800 text-[26px] absolute z-20 group-hover:scale-110 transition drop-shadow-sm -mt-1"></i><i class="fa-brands fa-whatsapp text-[#25D366] text-[24px] relative z-10 bg-white rounded-full"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center shadow-[0_0_8px_#25D366]"><i class="fa-brands fa-whatsapp text-[#25D366] text-[18px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm border border-green-100 hover:scale-110 transition cursor-pointer"><div class="absolute w-full h-full rounded-full border-[1.5px] border-green-400 scale-150 opacity-0 animate-ping" style="animation-duration: 2.5s;"></div><i class="fa-brands fa-whatsapp text-[#25D366] text-[18px] relative z-10"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-blue-50 px-2 py-1.5 rounded-full border border-blue-200 flex items-center gap-1 shadow-sm"><i class="fa-brands fa-whatsapp text-[#25D366] text-[14px]"></i><span class="text-[8px] font-bold text-blue-800">Sales</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-gradient-to-br from-[#25D366] to-green-600 w-8 h-8 rounded-t-xl rounded-bl-xl rounded-br-sm flex items-center justify-center shadow-sm animate-float-btn cursor-pointer border border-green-500 hover:scale-105 transition"><i class="fa-brands fa-whatsapp text-white text-[16px]"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center shadow-sm group hover:-translate-y-1 transition overflow-hidden cursor-pointer"><div class="absolute -inset-3 bg-gradient-to-r from-transparent via-[#25D366]/60 to-transparent group-hover:animate-fast-spin"></div><div class="w-[30px] h-[30px] bg-gray-800 rounded-lg flex items-center justify-center z-10 border border-gray-700"><i class="fa-brands fa-whatsapp text-[#25D366] text-[16px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="flex items-center justify-center relative hover:-translate-y-1 transition"><i class="fa-solid fa-wing text-cyan-300 text-xl absolute -left-2 scale-x-[-1] animate-pulse drop-shadow-sm"></i><i class="fa-brands fa-whatsapp text-[#25D366] text-[28px] relative z-10 drop-shadow-sm bg-white rounded-full"></i><i class="fa-solid fa-wing text-cyan-300 text-xl absolute -right-2 animate-pulse drop-shadow-sm"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="bg-gray-800 px-2 py-1 rounded-full flex items-center gap-1 shadow-sm border border-gray-700"><i class="fa-brands fa-whatsapp text-[#25D366] text-[14px]"></i><span class="text-[8px] text-gray-200">Connect</span></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex items-center justify-center group hover:translate-x-1.5 transition-transform"><div class="absolute -left-1.5 w-4 h-5 bg-red-600 rounded-l-full -z-10 group-hover:w-6 group-hover:-left-3 transition-all shadow-sm"></div><div class="bg-white rounded-full shadow-sm border border-gray-100 z-10 group-hover:scale-110 transition-transform"><i class="fa-brands fa-whatsapp text-[#25D366] text-[26px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><span class="text-[10px] font-extrabold text-gray-400 opacity-30 mb-0.5">29</span><div class="relative flex flex-col items-center group mt-1"><i class="fa-solid fa-hat-chef text-gray-800 text-[20px] absolute -top-2 z-20 group-hover:scale-125 transition drop-shadow-sm"></i><div class="bg-white rounded-full shadow-sm border border-gray-100 mt-1 group-hover:animate-wiggle"><i class="fa-brands fa-whatsapp text-[#25D366] text-[26px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><span class="text-[10px] font-extrabold text-gray-400 opacity-30 mb-0.5">30</span><div class="relative w-9 h-9 bg-blue-100/60 border border-blue-300 rounded-full flex items-center justify-center shadow-sm group hover:scale-125 hover:bg-white hover:border-green-200 transition-all duration-500 overflow-visible cursor-pointer"><i class="fa-brands fa-whatsapp text-[#25D366] text-[18px] opacity-70 group-hover:opacity-100 group-hover:text-[28px] transition-all duration-500"></i></div></div>
+                </div>
+            </div>
+
+            <!-- 10 Mockup Grid (RESTORED TO ORIGINAL DESIGNS - ALL RIGHT SIDE) -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                
+                <!-- Style 1: The Glowing Pulse -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-gray-800 mb-2 text-center uppercase tracking-wider">1. Glowing Pulse</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <div class="absolute top-0 w-full h-3 bg-white/20 backdrop-blur-sm border-b border-white/10 flex items-center px-1.5 gap-1 z-10">
+                            <div class="w-1.5 h-1.5 rounded bg-white/80"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60 ml-auto"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60"></div>
+                        </div>
+                        <div class="absolute top-6 left-2 space-y-1 z-10">
+                            <div class="w-12 h-1.5 bg-white rounded shadow-sm"></div>
+                            <div class="w-8 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+                        <!-- Original Button Design (RIGHT) -->
+                        <div class="absolute bottom-2 right-2 flex items-center justify-center z-20">
+                            <div class="absolute w-8 h-8 bg-green-400 rounded-full animate-ping opacity-75"></div>
+                            <div class="relative w-7 h-7 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg">
+                                <i class="fa-brands fa-whatsapp text-white text-[12px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 2: The Heartbeat 3D -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-gray-800 mb-2 text-center uppercase tracking-wider">2. Heartbeat 3D</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute top-0 w-full h-3 bg-white/20 backdrop-blur-sm border-b border-white/10 flex items-center px-1.5 gap-1 z-10">
+                            <div class="w-1.5 h-1.5 rounded bg-white/80"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60 ml-auto"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60"></div>
+                        </div>
+                        <div class="absolute top-6 left-2 space-y-1 z-10">
+                            <div class="w-14 h-1.5 bg-white rounded shadow-sm"></div>
+                            <div class="w-10 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+                        <!-- Original Button Design (RIGHT) -->
+                        <div class="absolute bottom-2 right-2 w-8 h-8 bg-gradient-to-br from-[#25D366] to-green-700 rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(37,211,102,0.6)] animate-heartbeat border-2 border-white z-20">
+                            <i class="fa-brands fa-whatsapp text-white text-[14px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 3: Wiggling Funny Button -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-gray-800 mb-2 text-center uppercase tracking-wider">3. Wiggle Shake</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <div class="absolute top-0 w-full h-3 bg-white/20 backdrop-blur-sm border-b border-white/10 flex items-center px-1.5 gap-1 z-10">
+                            <div class="w-1.5 h-1.5 rounded bg-white/80"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60 ml-auto"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60"></div>
+                        </div>
+                        <div class="absolute top-6 left-2 space-y-1 z-10">
+                            <div class="w-10 h-1.5 bg-white rounded shadow-sm"></div>
+                            <div class="w-6 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+                        <!-- Original Button Design (RIGHT) -->
+                        <div class="absolute bottom-2 right-2 w-7 h-7 bg-[#25D366] rounded-xl flex items-center justify-center shadow-md animate-wiggle transform rotate-12 z-20">
+                            <i class="fa-brands fa-whatsapp text-white text-[14px] -rotate-12"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 4: Bouncing Bubble -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-gray-800 mb-2 text-center uppercase tracking-wider">4. Bouncing Jump</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute top-0 w-full h-3 bg-white/20 backdrop-blur-sm border-b border-white/10 flex items-center px-1.5 gap-1 z-10">
+                            <div class="w-1.5 h-1.5 rounded bg-white/80"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60 ml-auto"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60"></div>
+                        </div>
+                        <div class="absolute top-6 left-2 space-y-1 z-10">
+                            <div class="w-16 h-1.5 bg-white rounded shadow-sm"></div>
+                            <div class="w-12 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+                        <!-- Original Button Design (RIGHT) -->
+                        <div class="absolute bottom-2 right-2 w-7 h-7 bg-white border-2 border-[#25D366] rounded-full flex items-center justify-center shadow-md animate-bounce z-20">
+                            <i class="fa-brands fa-whatsapp text-[#25D366] text-[14px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 5: Text Pill -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-gray-800 mb-2 text-center uppercase tracking-wider">5. Action Text</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute top-0 w-full h-3 bg-white/20 backdrop-blur-sm border-b border-white/10 flex items-center px-1.5 gap-1 z-10">
+                            <div class="w-1.5 h-1.5 rounded bg-white/80"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60 ml-auto"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60"></div>
+                        </div>
+                        <div class="absolute top-6 left-2 space-y-1 z-10">
+                            <div class="w-12 h-1.5 bg-white rounded shadow-sm"></div>
+                            <div class="w-8 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+                        <!-- Original Button Design (RIGHT) -->
+                        <div class="absolute bottom-2 right-2 bg-[#25D366] text-white px-2 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg hover:pr-3 transition-all duration-300 z-20">
+                            <i class="fa-brands fa-whatsapp text-[12px] animate-pulse"></i>
+                            <span class="text-[6px] font-black uppercase tracking-wide">WhatsApp Us</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 6: Visual Agent Avatar -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-gray-800 mb-2 text-center uppercase tracking-wider">6. Agent Avatar</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <div class="absolute top-0 w-full h-3 bg-white/20 backdrop-blur-sm border-b border-white/10 flex items-center px-1.5 gap-1 z-10">
+                            <div class="w-1.5 h-1.5 rounded bg-white/80"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60 ml-auto"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60"></div>
+                        </div>
+                        <div class="absolute top-6 left-2 space-y-1 z-10">
+                            <div class="w-14 h-1.5 bg-white rounded shadow-sm"></div>
+                            <div class="w-6 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+                        <!-- Original Button Design (RIGHT) -->
+                        <div class="absolute bottom-2 right-2 flex flex-col items-center animate-float-btn z-20">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=100&auto=format&fit=crop" class="w-8 h-8 rounded-full border-2 border-white shadow-md object-cover" alt="Agent">
+                                <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-[#25D366] rounded-full flex items-center justify-center border border-white">
+                                    <i class="fa-brands fa-whatsapp text-white text-[7px]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 7: The Leaf Shape -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-gray-800 mb-2 text-center uppercase tracking-wider">7. Leaf Shape</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute top-0 w-full h-3 bg-white/20 backdrop-blur-sm border-b border-white/10 flex items-center px-1.5 gap-1 z-10">
+                            <div class="w-1.5 h-1.5 rounded bg-white/80"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60 ml-auto"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60"></div>
+                        </div>
+                        <div class="absolute top-6 left-2 space-y-1 z-10">
+                            <div class="w-16 h-1.5 bg-white rounded shadow-sm"></div>
+                            <div class="w-10 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+                        <!-- Original Button Design (RIGHT) -->
+                        <div class="absolute bottom-2 right-2 w-8 h-8 bg-[#25D366] rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm flex items-center justify-center shadow-md hover:rounded-xl transition-all duration-300 z-20">
+                            <i class="fa-brands fa-whatsapp text-white text-[14px] animate-wiggle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 8: Notification Alert -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-gray-800 mb-2 text-center uppercase tracking-wider">8. Red Alert Dot</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute top-0 w-full h-3 bg-white/20 backdrop-blur-sm border-b border-white/10 flex items-center px-1.5 gap-1 z-10">
+                            <div class="w-1.5 h-1.5 rounded bg-white/80"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60 ml-auto"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60"></div>
+                        </div>
+                        <div class="absolute top-6 left-2 space-y-1 z-10">
+                            <div class="w-10 h-1.5 bg-white rounded shadow-sm"></div>
+                            <div class="w-8 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+                        <!-- Original Button Design (RIGHT) -->
+                        <div class="absolute bottom-2 right-2 w-7 h-7 bg-white border border-gray-300 rounded-full flex items-center justify-center shadow-lg z-20">
+                            <i class="fa-brands fa-whatsapp text-[#25D366] text-[14px]"></i>
+                            <div class="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 rounded-full border border-white flex items-center justify-center">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                <span class="text-[5px] text-white font-bold relative z-10">1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 9: Chat Bubble Visual -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-gray-800 mb-2 text-center uppercase tracking-wider">9. Chat Visual</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <div class="absolute top-0 w-full h-3 bg-white/20 backdrop-blur-sm border-b border-white/10 flex items-center px-1.5 gap-1 z-10">
+                            <div class="w-1.5 h-1.5 rounded bg-white/80"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60 ml-auto"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60"></div>
+                        </div>
+                        <div class="absolute top-6 left-2 space-y-1 z-10">
+                            <div class="w-12 h-1.5 bg-white rounded shadow-sm"></div>
+                            <div class="w-10 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+                        <!-- Original Button Design (RIGHT) -->
+                        <div class="absolute bottom-2 right-2 flex flex-col items-end animate-float-btn z-20">
+                            <div class="bg-white px-2 py-1 rounded-t-lg rounded-bl-lg rounded-br-sm shadow border border-green-200 mb-1 flex items-center gap-1">
+                                <span class="w-1 h-1 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0ms;"></span>
+                                <span class="w-1 h-1 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 150ms;"></span>
+                                <span class="w-1 h-1 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 300ms;"></span>
+                            </div>
+                            <div class="w-6 h-6 bg-[#25D366] rounded-full flex items-center justify-center shadow-md">
+                                <i class="fa-brands fa-whatsapp text-white text-[10px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 10: Rotating Spin -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-gray-800 mb-2 text-center uppercase tracking-wider">10. Glowing Spin</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute top-0 w-full h-3 bg-white/20 backdrop-blur-sm border-b border-white/10 flex items-center px-1.5 gap-1 z-10">
+                            <div class="w-1.5 h-1.5 rounded bg-white/80"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60 ml-auto"></div>
+                            <div class="w-3 h-[2px] rounded bg-white/60"></div>
+                        </div>
+                        <div class="absolute top-6 left-2 space-y-1 z-10">
+                            <div class="w-14 h-1.5 bg-white rounded shadow-sm"></div>
+                            <div class="w-8 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+                        <!-- Original Button Design (RIGHT) -->
+                        <div class="absolute bottom-2 right-2 w-8 h-8 rounded-full flex items-center justify-center overflow-hidden shadow-lg p-[2px] bg-gradient-to-tr from-green-300 via-[#25D366] to-yellow-300 z-20">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-green-300 via-[#25D366] to-yellow-300 animate-spin-slow"></div>
+                            <div class="w-full h-full bg-white rounded-full relative z-10 flex items-center justify-center">
+                                <i class="fa-brands fa-whatsapp text-[#25D366] text-[16px] animate-heartbeat"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+      <!-- Chatbot Integration Section -->
+    <section class="py-20 bg-indigo-50 border-t border-indigo-100 relative z-10" id="chatbot-integration">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-200 text-indigo-900 font-bold text-sm mb-4 shadow-sm border border-indigo-300 animate-pulse">
+                    <i class="fa-solid fa-message text-lg"></i>
+                    Chatbot Integration
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">Interactive Chatbot Integration For Your Website</h2>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    We will integrate a smart, interactive chatbot into your website. Operating 24/7, this chatbot instantly responds to client inquiries. The moment a prospect visits your site, the chatbot engages them like a human real estate agent, understands their property requirements, and provides immediate, accurate information.
+                </p>
+            </div>
+
+            <!-- Chatbot Designs Headline -->
+            <div class="text-center mb-6">
+                <h3 class="text-xl font-bold text-gray-800">Select Your Chatbot Widget Design:</h3>
+            </div>
+
+            <!-- NEW 30 Unique Chatbot Icons Scrolling Ticker (Robot & Messenger Only) -->
+            <div class="mb-12">
+                <div class="relative w-full overflow-hidden h-14 flex items-center border-y border-indigo-200/50 bg-white/30 shadow-inner">
+                    <!-- Fade Effects -->
+                    <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-indigo-50 to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-indigo-50 to-transparent z-10 pointer-events-none"></div>
+
+                    <!-- Scrolling Icons Track -->
+                    <div class="flex animate-scroll-x gap-10 items-center px-4 hover:cursor-pointer text-2xl text-indigo-600">
+                        <!-- Set 1 (Robot & Messenger Icons) -->
+                        <div class="shrink-0"><i class="fa-solid fa-robot hover:scale-125 transition text-indigo-600"></i></div>
+                        <div class="shrink-0"><i class="fa-brands fa-facebook-messenger animate-pulse text-blue-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-dots hover:-translate-y-2 transition text-purple-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot hover:scale-110 transition text-green-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-message hover:rotate-12 transition text-cyan-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-pink-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comments hover:scale-125 transition text-orange-500"></i></div>
+                        <div class="shrink-0"><i class="fa-brands fa-facebook-messenger animate-bounce text-indigo-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-sms hover:-translate-y-2 transition text-teal-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-blue-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-message hover:scale-110 transition text-rose-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot hover:scale-125 transition text-emerald-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-dots hover:rotate-12 transition text-indigo-400"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-slate-700"></i></div>
+                        <div class="shrink-0"><i class="fa-brands fa-facebook-messenger animate-wiggle text-sky-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comments hover:scale-110 transition text-violet-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-message hover:-translate-y-1 transition text-blue-700"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-lime-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot hover:scale-110 transition text-fuchsia-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-sms hover:scale-125 transition text-amber-500"></i></div>
+                        <div class="shrink-0"><i class="fa-brands fa-facebook-messenger animate-bounce text-indigo-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-dots hover:rotate-12 transition text-pink-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-cyan-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-message hover:scale-125 transition text-emerald-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-teal-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comments hover:-translate-y-1 transition text-rose-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-wiggle text-purple-600"></i></div>
+                        <div class="shrink-0"><i class="fa-brands fa-facebook-messenger hover:scale-110 transition text-blue-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-sms hover:rotate-12 transition text-indigo-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment animate-pulse text-sky-400"></i></div>
+                        
+                        <!-- Set 2 (Duplicate for Seamless Scroll) -->
+                        <div class="shrink-0"><i class="fa-solid fa-robot hover:scale-125 transition text-indigo-600"></i></div>
+                        <div class="shrink-0"><i class="fa-brands fa-facebook-messenger animate-pulse text-blue-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-dots hover:-translate-y-2 transition text-purple-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot hover:scale-110 transition text-green-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-message hover:rotate-12 transition text-cyan-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-pink-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comments hover:scale-125 transition text-orange-500"></i></div>
+                        <div class="shrink-0"><i class="fa-brands fa-facebook-messenger animate-bounce text-indigo-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-sms hover:-translate-y-2 transition text-teal-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-blue-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-message hover:scale-110 transition text-rose-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot hover:scale-125 transition text-emerald-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-dots hover:rotate-12 transition text-indigo-400"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-slate-700"></i></div>
+                        <div class="shrink-0"><i class="fa-brands fa-facebook-messenger animate-wiggle text-sky-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comments hover:scale-110 transition text-violet-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-message hover:-translate-y-1 transition text-blue-700"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-lime-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot hover:scale-110 transition text-fuchsia-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-sms hover:scale-125 transition text-amber-500"></i></div>
+                        <div class="shrink-0"><i class="fa-brands fa-facebook-messenger animate-bounce text-indigo-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-dots hover:rotate-12 transition text-pink-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-cyan-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-message hover:scale-125 transition text-emerald-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-pulse text-teal-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comments hover:-translate-y-1 transition text-rose-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-robot animate-wiggle text-purple-600"></i></div>
+                        <div class="shrink-0"><i class="fa-brands fa-facebook-messenger hover:scale-110 transition text-blue-600"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment-sms hover:rotate-12 transition text-indigo-500"></i></div>
+                        <div class="shrink-0"><i class="fa-solid fa-comment animate-pulse text-sky-400"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10 NEW Chatbot Mockup Templates Grid (Real Estate Websites & Portal Backgrounds) -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+                
+                <!-- Style 1: ChatGPT Integration -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">ChatGPT Bot</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        
+                        <!-- Mini Website UI Frame -->
+                        <div class="absolute top-0 left-0 right-0 h-4 bg-white/95 backdrop-blur-sm flex items-center justify-between px-2 z-10 border-b border-gray-200">
+                            <div class="w-3 h-1.5 bg-indigo-600 rounded-sm"></div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-7 left-2 z-10 space-y-1">
+                            <div class="w-16 h-2 bg-white rounded shadow-sm"></div>
+                            <div class="w-24 h-1 bg-white/80 rounded shadow-sm"></div>
+                            <div class="w-20 h-1 bg-white/80 rounded shadow-sm"></div>
+                            <div class="w-8 h-2 bg-indigo-500 rounded shadow-sm mt-1"></div>
+                        </div>
+
+                        <!-- Floating Robot with Pinging Rings -->
+                        <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center animate-float-btn group-hover:scale-110 transition">
+                            <div class="absolute w-12 h-12 border border-cyan-400 rounded-full animate-ping opacity-50"></div>
+                            <div class="absolute w-8 h-8 border border-cyan-300 rounded-full animate-ping opacity-75"></div>
+                            <div class="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)]">
+                                <i class="fa-solid fa-robot text-white text-[16px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 2: Dialogflow Agent -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Dialogflow Agent</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-slate-900/50"></div>
+                        
+                        <!-- Mini Website UI Frame -->
+                        <div class="absolute top-0 left-0 right-0 h-4 bg-white/95 backdrop-blur-sm flex items-center justify-between px-2 z-10 border-b border-gray-200">
+                            <div class="w-3 h-1.5 bg-orange-500 rounded-sm"></div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-7 left-2 z-10 space-y-1">
+                            <div class="w-14 h-2 bg-white rounded shadow-sm"></div>
+                            <div class="w-20 h-1 bg-white/80 rounded shadow-sm"></div>
+                            <div class="w-6 h-2 bg-orange-500 rounded shadow-sm mt-1"></div>
+                        </div>
+
+                        <!-- Pulsing Orange Robot -->
+                        <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:-translate-y-2 transition duration-300">
+                            <div class="w-10 h-10 bg-gradient-to-tr from-orange-500 to-amber-500 rounded-full flex items-center justify-center shadow-[0_5px_15px_rgba(249,115,22,0.5)] animate-pulse">
+                                <i class="fa-solid fa-robot text-white text-[16px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 3: Intercom Support -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Intercom Support</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-blue-900/40"></div>
+                        
+                        <!-- Mini Website UI Frame -->
+                        <div class="absolute top-0 left-0 right-0 h-4 bg-white/95 backdrop-blur-sm flex items-center justify-between px-2 z-10 border-b border-gray-200">
+                            <div class="w-4 h-1.5 bg-blue-600 rounded-sm"></div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-7 left-2 z-10 space-y-1">
+                            <div class="w-16 h-2 bg-white rounded shadow-sm"></div>
+                            <div class="w-24 h-1 bg-white/80 rounded shadow-sm"></div>
+                            <div class="w-16 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+
+                        <!-- Floating Blue Chat with Red Notification Dot -->
+                        <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center animate-float-btn group-hover:scale-110 transition">
+                            <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center shadow-lg relative">
+                                <i class="fa-solid fa-comment-dots text-white text-[16px]"></i>
+                                <div class="absolute top-0 right-0 w-3 h-3 bg-red-500 rounded-full border-2 border-white"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 4: ManyChat Bot -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">ManyChat Bot</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460472178825-e5240623afd5?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/60"></div>
+                        
+                        <!-- Mini Website UI Frame -->
+                        <div class="absolute top-0 left-0 right-0 h-4 bg-white/95 backdrop-blur-sm flex items-center justify-between px-2 z-10 border-b border-gray-200">
+                            <div class="w-3 h-1.5 bg-fuchsia-600 rounded-sm"></div>
+                            <div class="flex gap-1">
+                                <div class="w-3 h-[2px] bg-gray-400 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-7 left-2 z-10 space-y-1">
+                            <div class="w-14 h-2 bg-white rounded shadow-sm"></div>
+                            <div class="w-20 h-1 bg-white/80 rounded shadow-sm"></div>
+                            <div class="w-10 h-2 bg-fuchsia-600 rounded shadow-sm mt-1"></div>
+                        </div>
+
+                        <!-- Purple Robot with Spinning Border -->
+                        <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:rotate-12 transition">
+                            <div class="absolute w-12 h-12 border-t-2 border-fuchsia-500 rounded-full animate-spin"></div>
+                            <div class="w-10 h-10 bg-gradient-to-tr from-fuchsia-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                                <i class="fa-solid fa-robot text-white text-[16px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 5: Zendesk Chat -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Zendesk Chat</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        
+                        <!-- Mini Website UI Frame -->
+                        <div class="absolute top-0 left-0 right-0 h-4 bg-white/95 backdrop-blur-sm flex items-center justify-between px-2 z-10 border-b border-gray-200">
+                            <div class="w-3 h-1.5 bg-emerald-500 rounded-sm"></div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-7 left-2 z-10 space-y-1">
+                            <div class="w-16 h-2 bg-white rounded shadow-sm"></div>
+                            <div class="w-24 h-1 bg-white/80 rounded shadow-sm"></div>
+                            <div class="w-8 h-2 bg-emerald-500 rounded shadow-sm mt-1"></div>
+                        </div>
+
+                        <!-- Bouncing Emerald Chat -->
+                        <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center animate-bounce group-hover:animate-none transition">
+                            <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(16,185,129,0.5)]">
+                                <i class="fa-solid fa-comments text-white text-[16px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 6: Drift Sales Bot -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Drift Sales Bot</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/60"></div>
+                        
+                        <!-- Mini Website UI Frame -->
+                        <div class="absolute top-0 left-0 right-0 h-4 bg-white/95 backdrop-blur-sm flex items-center justify-between px-2 z-10 border-b border-gray-200">
+                            <div class="w-3 h-1.5 bg-yellow-500 rounded-sm"></div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-7 left-2 z-10 space-y-1">
+                            <div class="w-14 h-2 bg-white rounded shadow-sm"></div>
+                            <div class="w-24 h-1 bg-white/80 rounded shadow-sm"></div>
+                            <div class="w-16 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+
+                        <!-- Heartbeat Robot in Glowing Orb -->
+                        <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:scale-110 transition">
+                            <div class="absolute w-12 h-12 bg-yellow-400 rounded-full animate-ping opacity-30"></div>
+                            <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg animate-heartbeat">
+                                <i class="fa-solid fa-robot text-white text-[16px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 7: Tidio Lead Bot -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Tidio Lead Bot</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/50"></div>
+                        
+                        <!-- Mini Website UI Frame -->
+                        <div class="absolute top-0 left-0 right-0 h-4 bg-white/95 backdrop-blur-sm flex items-center justify-between px-2 z-10 border-b border-gray-200">
+                            <div class="w-4 h-1.5 bg-rose-600 rounded-sm"></div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-7 left-2 z-10 space-y-1">
+                            <div class="w-16 h-2 bg-white rounded shadow-sm"></div>
+                            <div class="w-24 h-1 bg-white/80 rounded shadow-sm"></div>
+                            <div class="w-8 h-2 bg-rose-600 rounded shadow-sm mt-1"></div>
+                        </div>
+
+                        <!-- Rose Message Bubble that wiggles on hover -->
+                        <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:-translate-y-1 transition">
+                            <div class="w-10 h-10 bg-rose-600 rounded-full flex items-center justify-center shadow-lg group-hover:animate-wiggle">
+                                <i class="fa-brands fa-facebook-messenger text-white text-[16px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 8: Freshchat AI -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Freshchat AI</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/60"></div>
+                        
+                        <!-- Mini Website UI Frame -->
+                        <div class="absolute top-0 left-0 right-0 h-4 bg-white/95 backdrop-blur-sm flex items-center justify-between px-2 z-10 border-b border-gray-200">
+                            <div class="w-3 h-1.5 bg-indigo-600 rounded-sm"></div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-7 left-2 z-10 space-y-1">
+                            <div class="w-14 h-2 bg-white rounded shadow-sm"></div>
+                            <div class="w-20 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+
+                        <!-- Indigo Floating Robot with Ping Backdrop -->
+                        <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center animate-float-btn group-hover:scale-105 transition">
+                            <div class="absolute w-10 h-10 bg-indigo-500 rounded-full animate-ping opacity-40"></div>
+                            <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                                <i class="fa-solid fa-robot text-white text-[16px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 9: HubSpot Bot -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">HubSpot Bot</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        
+                        <!-- Mini Website UI Frame -->
+                        <div class="absolute top-0 left-0 right-0 h-4 bg-white/95 backdrop-blur-sm flex items-center justify-between px-2 z-10 border-b border-gray-200">
+                            <div class="w-4 h-1.5 bg-lime-500 rounded-sm"></div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-7 left-2 z-10 space-y-1">
+                            <div class="w-16 h-2 bg-white rounded shadow-sm"></div>
+                            <div class="w-24 h-1 bg-white/80 rounded shadow-sm"></div>
+                            <div class="w-16 h-1 bg-white/80 rounded shadow-sm"></div>
+                        </div>
+
+                        <!-- Dark Bubble with Glowing Lime Robot -->
+                        <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:rotate-12 transition">
+                            <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center shadow-lg border-2 border-lime-400">
+                                <i class="fa-solid fa-robot text-lime-400 text-[16px] animate-pulse"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style 10: Custom API Bot -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                    <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Custom API Bot</h3>
+                    <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-slate-900/60"></div>
+                        
+                        <!-- Mini Website UI Frame -->
+                        <div class="absolute top-0 left-0 right-0 h-4 bg-white/95 backdrop-blur-sm flex items-center justify-between px-2 z-10 border-b border-gray-200">
+                            <div class="w-3 h-1.5 bg-yellow-500 rounded-sm"></div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                                <div class="w-2 h-[2px] bg-gray-400 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-7 left-2 z-10 space-y-1">
+                            <div class="w-16 h-2 bg-white rounded shadow-sm"></div>
+                            <div class="w-24 h-1 bg-white/80 rounded shadow-sm"></div>
+                            <div class="w-8 h-2 bg-yellow-500 rounded shadow-sm mt-1"></div>
+                        </div>
+
+                        <!-- Gradient Rotating Background Bot -->
+                        <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:-translate-y-2 transition">
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-pink-500 rounded-full animate-spin-slow blur-[4px]"></div>
+                            <div class="w-10 h-10 bg-gradient-to-t from-yellow-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg relative z-10">
+                                <i class="fa-solid fa-robot text-white text-[16px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+ <!-- AI Assistant / Virtual Agent Section -->
+        <section class="pt-10 pb-8 bg-indigo-50 border-t border-indigo-100 relative z-10" id="ai-assistant">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-4xl mx-auto mb-12">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-200 text-indigo-900 font-bold text-sm mb-4 shadow-sm border border-indigo-300 animate-pulse">
+                        <i class="fa-solid fa-robot text-lg"></i>
+                        Next-Gen AI Assistant
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">Your Smart Virtual Employee</h2>
+                    <p class="text-gray-600 text-sm md:text-lg leading-relaxed">
+                        Automate client interactions, understand their requirements, and filter leads effortlessly! We will develop and integrate a custom AI assistant directly into your website to engage with your clients 24/7. <strong class="text-indigo-700 font-bold">This will handle the work of many of your employees</strong>, managing endless inquiries simultaneously while providing accurate property information instantly.
+                    </p>
+                </div>
+
+                <!-- AI Assistant Designs On Your Website Headline -->
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-bold text-gray-800">AI Assistant Designs on Your Website:</h3>
+                </div>
+
+                <!-- NEW: 30 AI Assistant Design Selection Ticker (Vigyapan Patti) -->
+                <div class="mb-12">
+                    <div class="relative w-full overflow-hidden h-14 flex items-center border-y border-indigo-200/50 bg-white/20 shadow-inner">
+                        <!-- Fade Effects -->
+                        <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-indigo-50 to-transparent z-10"></div>
+                        <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-indigo-50 to-transparent z-10"></div>
+
+                        <!-- 30 AI Icons Scrolling (No Messengers, No Semiconductors) -->
+                        <div class="flex animate-scroll-x gap-10 items-center px-4">
+                            <!-- Set 1 -->
+                            <div class="shrink-0"><i class="fa-solid fa-robot text-indigo-600 text-2xl hover:scale-125 transition"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-brain text-purple-600 text-2xl animate-pulse"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-user-astronaut text-blue-500 text-2xl hover:-translate-y-1 transition"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-eye text-cyan-500 text-2xl animate-pulse"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-atom text-indigo-700 text-2xl animate-spin-slow"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-sparkles text-yellow-500 text-2xl hover:rotate-12 transition"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-wand-magic-sparkles text-pink-500 text-2xl animate-wiggle"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-headset text-emerald-500 text-2xl hover:scale-110 transition"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-cube text-indigo-500 text-2xl hover:-translate-y-2 transition"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-circle-nodes text-orange-500 text-2xl animate-pulse"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-diagram-project text-cyan-600 text-2xl hover:scale-110 transition"></i></div>
+                            
+                            <!-- Duplicate -->
+                            <div class="shrink-0"><i class="fa-solid fa-robot text-indigo-600 text-2xl hover:scale-125 transition"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-brain text-purple-600 text-2xl animate-pulse"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-user-astronaut text-blue-500 text-2xl hover:-translate-y-1 transition"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-atom text-indigo-700 text-2xl animate-spin-slow"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-sparkles text-yellow-500 text-2xl hover:rotate-12 transition"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-wand-magic-sparkles text-pink-500 text-2xl animate-wiggle"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-cube text-indigo-500 text-2xl hover:-translate-y-2 transition"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-circle-nodes text-orange-500 text-2xl animate-pulse"></i></div>
+                            <div class="shrink-0"><i class="fa-solid fa-diagram-project text-cyan-600 text-2xl hover:scale-110 transition"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Assistant Templates Grid (Light Glass CRM & Specific Locations) -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                    
+                    <!-- AI Style 1: Virtual Agent -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                        <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Virtual Agent</h3>
+                        <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer bg-white">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                            <div class="absolute inset-0 bg-black/20"></div>
+                            
+                            <div class="absolute top-0 w-full p-1.5 flex justify-between z-10 bg-gradient-to-b from-black/60 to-transparent">
+                                <div class="text-[5px] font-black text-white tracking-widest flex items-center gap-0.5"><i class="fa-solid fa-building"></i>HOMES</div>
+                            </div>
+
+                            <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center animate-float-btn group-hover:scale-110 transition">
+                                <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center shadow-lg border border-indigo-400">
+                                    <i class="fa-solid fa-user-astronaut text-white text-[12px]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Style 2: Neural Core -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                        <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Neural Core</h3>
+                        <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer bg-white">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1480796927426-f609979314bd?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                            
+                            <div class="absolute top-1 left-1 right-1 z-10">
+                                <div class="bg-white/80 backdrop-blur-sm rounded-full p-1 flex items-center shadow border border-white/50">
+                                    <i class="fa-solid fa-location-dot text-indigo-600 text-[5px] ml-0.5 mr-1"></i>
+                                    <span class="text-[4px] text-gray-800 font-bold">Tokyo City</span>
+                                </div>
+                            </div>
+
+                            <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:-translate-y-1 transition duration-300">
+                                <div class="w-8 h-8 bg-gradient-to-br from-fuchsia-600 to-purple-700 rounded-[10px] flex items-center justify-center shadow-lg animate-pulse border border-white/50">
+                                    <i class="fa-solid fa-brain text-white text-[14px]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Style 3: Vision AI (Mumbai Commercial) -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                        <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Vision AI</h3>
+                        <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer bg-white">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                            
+                            <div class="absolute top-0 w-full p-1.5 flex justify-between z-10 bg-gradient-to-b from-black/40 to-transparent">
+                                <span class="text-[5px] font-black text-white drop-shadow-md">MumbaiCommercial</span>
+                            </div>
+                            <div class="absolute bottom-2 left-1.5 z-10 flex gap-1">
+                                <div class="w-14 bg-white/90 backdrop-blur-sm rounded shadow border border-white/50 flex flex-col p-0.5">
+                                    <div class="text-[4px] font-bold text-gray-800">₹45 Cr</div>
+                                    <div class="text-[3px] text-gray-500">BKC Office Space</div>
+                                </div>
+                            </div>
+
+                            <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:scale-110 transition">
+                                <div class="absolute w-10 h-10 border border-cyan-500 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-spin-slow"></div>
+                                <div class="w-8 h-8 bg-slate-900 rounded-full flex items-center justify-center shadow-lg border border-cyan-400 z-10">
+                                    <i class="fa-solid fa-robot text-cyan-400 text-[12px] group-hover:animate-pulse"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Style 4: Quantum Bot (Search box removed) -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                        <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Quantum Bot</h3>
+                        <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer bg-white">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585153490-76fb20a32601?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                            <div class="absolute inset-0 bg-black/30"></div>
+
+                            <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center">
+                                <div class="w-8 h-8 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center shadow-lg border border-white/50 group-hover:rotate-90 transition duration-500">
+                                    <i class="fa-solid fa-atom text-white text-[16px] animate-[spin_4s_linear_infinite]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Style 5: Network Node (Delhi Villas) -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                        <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Network AI</h3>
+                        <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer bg-white">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                            <div class="absolute inset-0 bg-black/30"></div>
+                            
+                            <div class="absolute top-0 w-full p-1.5 flex justify-between items-center z-10">
+                                <span class="text-[5px] font-black text-white drop-shadow">Delhi Villas</span>
+                            </div>
+                            <div class="absolute top-6 left-2 z-10">
+                                <div class="text-[8px] font-extrabold text-white drop-shadow-md leading-tight">Luxury Living<br>in Delhi</div>
+                            </div>
+
+                            <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:rotate-45 transition duration-500">
+                                <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center shadow-lg border border-white/50 group-hover:animate-pulse">
+                                    <i class="fa-solid fa-circle-nodes text-white text-[14px]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AI Style 6: Core Engine (Shopping Complex) -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                        <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Core Engine</h3>
+                        <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer bg-white">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                            
+                            <div class="absolute top-2 left-1/2 -translate-x-1/2 bg-black/70 backdrop-blur-md rounded-full p-1 px-2 z-10 flex gap-2 border border-white/20 shadow-lg">
+                                <span class="text-[4px] text-white font-bold">Malls</span>
+                                <span class="text-[4px] text-white/70">Retail Shops</span>
+                            </div>
+
+                            <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:-translate-y-1 transition duration-300">
+                                <div class="w-8 h-8 bg-violet-600 rounded-full flex items-center justify-center shadow-lg border border-white/50 group-hover:animate-bounce">
+                                    <i class="fa-solid fa-cube text-white text-[14px]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Style 7: Nova Intelligence -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                        <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Nova Intel</h3>
+                        <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer bg-white">
+                            <!-- Updated Background: Modern Glass Commercial Building -->
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                            
+                            <div class="absolute top-1 left-1 flex flex-col gap-0.5 z-10">
+                                <div class="bg-yellow-400 text-black px-1.5 py-0.5 rounded text-[3px] font-black uppercase shadow w-max">Featured</div>
+                                <div class="bg-black/50 backdrop-blur-sm text-white px-1.5 py-0.5 rounded text-[3px] font-bold border border-white/20 shadow w-max">Pool</div>
+                            </div>
+
+                            <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center animate-pulse group-hover:animate-none transition">
+                                <div class="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full blur-[4px] group-hover:blur-[8px] transition-all"></div>
+                                <div class="w-8 h-8 bg-slate-900 rounded-full flex items-center justify-center relative z-10 border border-yellow-400 group-hover:scale-110 transition duration-300">
+                                    <i class="fa-solid fa-diagram-project text-yellow-400 text-[13px]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Style 8: AI Co-Pilot (Inner layout removed) -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                        <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">AI Co-Pilot</h3>
+                        <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer bg-white">
+                            <!-- Updated Background: Premium Smart Home Interior -->
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+
+                            <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center animate-float-btn group-hover:scale-110 transition">
+                                <div class="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center shadow-lg border border-white/50">
+                                    <i class="fa-solid fa-headset text-white text-[14px]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Style 9: Property Oracle (Redesigned HUD) -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                        <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Property Oracle</h3>
+                        <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer bg-white">
+                            <!-- Updated Background: Corporate Commercial Office Exterior -->
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1416331108676-a22ccb276e35?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center"></div>
+                            <div class="absolute inset-0 bg-indigo-900/40 mix-blend-multiply z-0"></div>
+                            
+                            <!-- NEW: Advanced Scanning HUD Panel -->
+                            <div class="absolute top-2 left-2 right-8 z-10 bg-slate-900/80 backdrop-blur-md rounded border border-pink-500/40 p-1.5 shadow-xl group-hover:border-pink-400 transition-colors">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-[4px] text-pink-300 font-bold uppercase tracking-wider flex items-center gap-1">
+                                        <i class="fa-solid fa-satellite-dish animate-pulse"></i> Market Analysis
+                                    </span>
+                                    <span class="text-[4px] text-green-400 font-bold">+12% Growth</span>
+                                </div>
+                                <div class="w-full bg-slate-700 rounded-full h-[2px] overflow-hidden">
+                                    <div class="bg-gradient-to-r from-pink-500 to-purple-500 h-full w-[65%] shadow-[0_0_5px_#ec4899] group-hover:w-full transition-all duration-1000 ease-in-out"></div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Tags -->
+                            <div class="absolute bottom-2 left-2 z-10 flex gap-1 group-hover:translate-x-1 transition duration-300">
+                                <div class="bg-white/20 backdrop-blur-sm border border-white/30 text-white text-[3px] px-1 py-0.5 rounded shadow">Prime Location</div>
+                                <div class="bg-white/20 backdrop-blur-sm border border-white/30 text-white text-[3px] px-1 py-0.5 rounded shadow">High ROI</div>
+                            </div>
+
+                            <!-- Sparkle Magic Button -->
+                            <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:scale-110 transition duration-300">
+                                <div class="w-8 h-8 bg-gradient-to-tr from-pink-600 to-purple-600 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(236,72,153,0.5)] border border-pink-300/50 group-hover:animate-pulse">
+                                    <i class="fa-solid fa-wand-magic-sparkles text-white text-[12px]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Style 10: Data Matrix (Restored) -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-indigo-200 hover:shadow-md transition group">
+                        <h3 class="text-[10px] font-bold text-indigo-900 mb-2 text-center uppercase tracking-wider">Data Matrix</h3>
+                        <div class="relative w-full h-28 rounded border border-gray-200 overflow-hidden cursor-pointer bg-white">
+                            <!-- Updated Background: Luxury Modern Apartment/Villa -->
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=300&auto=format&fit=crop')] bg-cover bg-center opacity-90"></div>
+                            <div class="absolute inset-0 bg-slate-900/40 mix-blend-overlay z-0"></div>
+                            
+                            <div class="absolute top-1.5 left-1.5 bg-black/70 backdrop-blur-sm rounded p-1 flex flex-col gap-0.5 z-10 border border-white/10 shadow-md">
+                                <div class="text-[4px] text-green-400 font-mono font-bold tracking-widest">> Yield: +8.4%</div>
+                                <div class="text-[4px] text-green-400 font-mono font-bold tracking-widest">> Risk: LOW</div>
+                            </div>
+
+                            <div class="absolute bottom-2 right-2 z-20 flex items-center justify-center group-hover:-translate-y-1 transition duration-300">
+                                <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center shadow-lg border border-white/50 group-hover:shadow-[0_0_15px_rgba(37,99,235,0.6)]">
+                                    <i class="fa-solid fa-server text-white text-[12px] group-hover:animate-pulse"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    <!-- NEW SEPARATE SECTION: Advanced Call-To-Action Integration -->
+    <section class="py-24 bg-slate-50 relative z-20 overflow-hidden border-t border-slate-200 shadow-[0_-10px_30px_rgba(0,0,0,0.05)]" id="calling-integration">
+        <!-- Soft Light Background Grid -->
+        <div class="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
         
+        <!-- Glowing Orbs (Soft) -->
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-green-200/50 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-200/50 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Centered Header -->
+            <div class="text-center max-w-4xl mx-auto mb-12">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 text-green-700 font-bold text-sm mb-6 shadow-sm border border-green-200 animate-pulse">
+                    <i class="fa-solid fa-microchip text-lg"></i>
+                    Advanced Voice Routing
+                </div>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">Smart <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-500">Call-To-Action</span> Bars</h2>
+                <p class="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto">
+                    Professional, highly-engaging calling strips designed for maximum conversion. Watch them constantly moving to attract your users' attention!
+                </p>
+            </div>
+
+            <!-- Vigyapan Patti (Scrolling Ticker) - UNTOUCHED & RESTORED TO DIVERSE SET -->
+            <div class="mb-14">
+                <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest text-center mb-4">Choose from hundreds of mini call widgets</p>
+                <div class="relative w-full overflow-hidden h-16 flex items-center border-y border-slate-200/80 bg-white/40 shadow-inner">
+                    <!-- Fade Effects -->
+                    <div class="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none"></div>
+
+                    <!-- Scrolling Track -->
+                    <div class="flex animate-scroll-x gap-10 items-center px-4 hover:cursor-pointer">
+                        <!-- SET 1 (15 Mini Call Buttons) -->
+                        <div class="shrink-0 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition"><i class="fa-solid fa-phone text-white text-sm animate-wiggle"></i></div>
+                        <div class="shrink-0 px-3 py-1.5 bg-blue-600 rounded-full flex items-center gap-1.5 shadow-md hover:-translate-y-1 transition"><i class="fa-solid fa-phone-volume text-white text-[10px] animate-pulse"></i><span class="text-[10px] font-bold text-white uppercase tracking-wider">Call</span></div>
+                        <div class="shrink-0 w-10 h-10 bg-gradient-to-br from-red-500 to-red-700 rounded-xl flex items-center justify-center shadow-md hover:rotate-12 transition"><i class="fa-solid fa-headset text-white text-sm"></i></div>
+                        <div class="shrink-0 relative w-10 h-10 bg-white border border-slate-200 rounded-full flex items-center justify-center shadow-sm hover:border-blue-400 transition"><i class="fa-solid fa-phone-flip text-slate-700 text-sm hover:text-blue-500 transition-colors"></i><div class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full animate-ping opacity-75"></div><div class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full"></div></div>
+                        <div class="shrink-0 px-2 py-1.5 bg-slate-800 rounded flex items-center gap-1.5 shadow-md hover:bg-black transition"><i class="fa-solid fa-phone text-green-400 text-[10px]"></i><span class="text-[8px] font-mono text-white">00:00</span></div>
+                        <div class="shrink-0 w-10 h-10 bg-cyan-50 rounded-full flex items-center justify-center border border-cyan-200 hover:scale-110 transition"><i class="fa-solid fa-phone-volume text-cyan-500 text-sm animate-bounce"></i></div>
+                        <div class="shrink-0 w-10 h-10 bg-purple-600 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm flex items-center justify-center shadow-lg hover:rotate-45 transition duration-300"><i class="fa-solid fa-headset text-white text-sm"></i></div>
+                        <div class="shrink-0 relative flex items-center justify-center"><div class="absolute inset-0 bg-green-400 rounded-full animate-ping opacity-50"></div><div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center relative z-10 shadow-sm"><i class="fa-solid fa-phone text-white text-sm"></i></div></div>
+                        <div class="shrink-0 px-3 py-1.5 bg-white border border-slate-300 rounded-full flex items-center gap-1.5 hover:shadow-md transition"><div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div><span class="text-[9px] font-bold text-slate-600 uppercase">Sales</span></div>
+                        <div class="shrink-0 w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center shadow-md hover:-translate-y-1 transition"><i class="fa-solid fa-phone-slash text-white text-sm"></i></div>
+                        <div class="shrink-0 w-10 h-10 bg-gradient-to-t from-blue-600 to-indigo-500 rounded-full flex items-center justify-center shadow-lg border-2 border-white hover:scale-125 transition"><i class="fa-solid fa-headset text-white text-sm"></i></div>
+                        <div class="shrink-0 flex bg-white rounded-md shadow-sm border border-slate-200 overflow-hidden hover:-translate-y-1 transition cursor-pointer"><div class="px-2 py-1.5 bg-slate-50"><i class="fa-solid fa-phone text-slate-400 text-[10px]"></i></div><div class="px-2 py-1.5 bg-green-50"><i class="fa-solid fa-check text-green-500 text-[10px]"></i></div></div>
+                        <div class="shrink-0 w-10 h-10 bg-rose-50 rounded-full flex items-center justify-center border border-rose-300 border-dashed animate-[spin_4s_linear_infinite] hover:bg-rose-100 transition"><i class="fa-solid fa-phone text-rose-500 text-sm animate-[spin_4s_linear_infinite_reverse]"></i></div>
+                        <div class="shrink-0 px-2 py-1.5 bg-gradient-to-r from-slate-800 to-slate-900 rounded-full flex items-center gap-2 border border-slate-700 shadow-md"><i class="fa-solid fa-phone text-white text-[10px]"></i><div class="flex gap-[1px] h-2 items-end"><div class="w-[2px] bg-green-400 h-1 animate-[bounce_1s_infinite]"></div><div class="w-[2px] bg-green-400 h-2 animate-[bounce_1s_infinite]" style="animation-delay: 0.1s"></div><div class="w-[2px] bg-green-400 h-1.5 animate-[bounce_1s_infinite]" style="animation-delay: 0.2s"></div></div></div>
+                        <div class="shrink-0 w-10 h-10 bg-slate-200 rounded-[10px] rounded-br-sm flex items-center justify-center shadow-sm border border-slate-300 hover:bg-white hover:border-slate-400 transition cursor-pointer"><i class="fa-solid fa-phone-volume text-slate-600 text-sm"></i></div>
+
+                        <!-- SET 2 (Exact Duplicate for Seamless Scroll) -->
+                        <div class="shrink-0 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition"><i class="fa-solid fa-phone text-white text-sm animate-wiggle"></i></div>
+                        <div class="shrink-0 px-3 py-1.5 bg-blue-600 rounded-full flex items-center gap-1.5 shadow-md hover:-translate-y-1 transition"><i class="fa-solid fa-phone-volume text-white text-[10px] animate-pulse"></i><span class="text-[10px] font-bold text-white uppercase tracking-wider">Call</span></div>
+                        <div class="shrink-0 w-10 h-10 bg-gradient-to-br from-red-500 to-red-700 rounded-xl flex items-center justify-center shadow-md hover:rotate-12 transition"><i class="fa-solid fa-headset text-white text-sm"></i></div>
+                        <div class="shrink-0 relative w-10 h-10 bg-white border border-slate-200 rounded-full flex items-center justify-center shadow-sm hover:border-blue-400 transition"><i class="fa-solid fa-phone-flip text-slate-700 text-sm hover:text-blue-500 transition-colors"></i><div class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full animate-ping opacity-75"></div><div class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full"></div></div>
+                        <div class="shrink-0 px-2 py-1.5 bg-slate-800 rounded flex items-center gap-1.5 shadow-md hover:bg-black transition"><i class="fa-solid fa-phone text-green-400 text-[10px]"></i><span class="text-[8px] font-mono text-white">00:00</span></div>
+                        <div class="shrink-0 w-10 h-10 bg-cyan-50 rounded-full flex items-center justify-center border border-cyan-200 hover:scale-110 transition"><i class="fa-solid fa-phone-volume text-cyan-500 text-sm animate-bounce"></i></div>
+                        <div class="shrink-0 w-10 h-10 bg-purple-600 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm flex items-center justify-center shadow-lg hover:rotate-45 transition duration-300"><i class="fa-solid fa-headset text-white text-sm"></i></div>
+                        <div class="shrink-0 relative flex items-center justify-center"><div class="absolute inset-0 bg-green-400 rounded-full animate-ping opacity-50"></div><div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center relative z-10 shadow-sm"><i class="fa-solid fa-phone text-white text-sm"></i></div></div>
+                        <div class="shrink-0 px-3 py-1.5 bg-white border border-slate-300 rounded-full flex items-center gap-1.5 hover:shadow-md transition"><div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div><span class="text-[9px] font-bold text-slate-600 uppercase">Sales</span></div>
+                        <div class="shrink-0 w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center shadow-md hover:-translate-y-1 transition"><i class="fa-solid fa-phone-slash text-white text-sm"></i></div>
+                        <div class="shrink-0 w-10 h-10 bg-gradient-to-t from-blue-600 to-indigo-500 rounded-full flex items-center justify-center shadow-lg border-2 border-white hover:scale-110 transition"><i class="fa-solid fa-headset text-white text-sm"></i></div>
+                        <div class="shrink-0 flex bg-white rounded-md shadow-sm border border-slate-200 overflow-hidden hover:-translate-y-1 transition cursor-pointer"><div class="px-2 py-1.5 bg-slate-50"><i class="fa-solid fa-phone text-slate-400 text-[10px]"></i></div><div class="px-2 py-1.5 bg-green-50"><i class="fa-solid fa-check text-green-500 text-[10px]"></i></div></div>
+                        <div class="shrink-0 w-10 h-10 bg-rose-50 rounded-full flex items-center justify-center border border-rose-300 border-dashed animate-[spin_4s_linear_infinite] hover:bg-rose-100 transition"><i class="fa-solid fa-phone text-rose-500 text-sm animate-[spin_4s_linear_infinite_reverse]"></i></div>
+                        <div class="shrink-0 px-2 py-1.5 bg-gradient-to-r from-slate-800 to-slate-900 rounded-full flex items-center gap-2 border border-slate-700 shadow-md"><i class="fa-solid fa-phone text-white text-[10px]"></i><div class="flex gap-[1px] h-2 items-end"><div class="w-[2px] bg-green-400 h-1 animate-[bounce_1s_infinite]"></div><div class="w-[2px] bg-green-400 h-2 animate-[bounce_1s_infinite]" style="animation-delay: 0.1s"></div><div class="w-[2px] bg-green-400 h-1.5 animate-[bounce_1s_infinite]" style="animation-delay: 0.2s"></div></div></div>
+                        <div class="shrink-0 w-10 h-10 bg-slate-200 rounded-[10px] rounded-br-sm flex items-center justify-center shadow-sm border border-slate-300 hover:bg-white hover:border-slate-400 transition cursor-pointer"><i class="fa-solid fa-phone-volume text-slate-600 text-sm"></i></div>
+                    </div>
+                </div>
+            </div>
 
         <!-- Pricing Section -->
         <section id="pricing" class="pt-12 pb-12 relative overflow-hidden bg-blue-950">
