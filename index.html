@@ -89,6 +89,14 @@
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         .animate-marquee { display: flex; animation: marquee 20s linear infinite; }
+
+        @keyframes scroll-tabs { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .animate-scroll-tabs { animation: scroll-tabs 30s linear infinite; width: max-content; }
+        
+        @keyframes scroll-x { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .animate-scroll-x { animation: scroll-x 40s linear infinite; width: max-content; }
+        
+        .animate-scroll-tabs:hover, .animate-scroll-x:hover { animation-play-state: paused; cursor: pointer; }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-gray-50 antialiased overflow-x-hidden">
@@ -1961,6 +1969,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
         <!-- Pricing Section -->
         <section id="pricing" class="pt-12 pb-12 relative overflow-hidden bg-blue-950">
@@ -2468,7 +2478,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-950 text-gray-400 py-12 border-t border-blue-900 relative mt-10">
+    <footer class="bg-blue-950 text-gray-400 py-12 border-t border-blue-900 relative">
         <!-- PICHKA HUA WHATSAPP BOT (English Text) -->
         <div class="absolute -top-[80px] right-6 md:right-16 z-50 flex flex-col items-center justify-end w-32 h-24 pointer-events-none transform scale-[0.8] origin-bottom">
             <div class="absolute -top-6 -left-12 bg-yellow-300 text-black border-2 border-black font-black px-3 py-2 rounded-2xl shadow-[4px_4px_0px_rgba(0,0,0,1)] animate-comic-bounce whitespace-nowrap z-30 pointer-events-auto">
