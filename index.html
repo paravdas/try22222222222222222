@@ -31,8 +31,9 @@
     </script>
     
     <style>
+        /* System fonts stack ensures instant load with bold weight */
         body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; }
-        h1, h2, h3, h4, h5, h6 { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; font-weight: 900 !important; }
+        h1, h2, h3, h4, h5, h6 { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; font-weight: 800 !important; }
         
         @keyframes heartbeat { 
             0%, 100% { transform: scale(1); } 
@@ -146,61 +147,58 @@
     </nav>
 
     <div id="home-view">
-        <section id="home" class="hero-bg pt-32 md:pt-36 lg:pt-40 pb-16 relative overflow-hidden">
-   <div class="w-full overflow-hidden sm:overflow-visible flex flex-col items-center">
-    <div class="inline-flex items-center justify-center py-1.5 px-5 rounded-full bg-gradient-to-r from-white/5 to-white/10 border border-white/10 shadow-[0_0_20px_rgba(59,130,246,0.15)] backdrop-blur-md mb-5 group hover:bg-white/20 transition-all duration-300 cursor-default">
-        <span class="text-blue-50 font-semibold text-[10px] sm:text-sm tracking-wide drop-shadow-sm whitespace-nowrap">Real Estate Software Technology Pvt. Ltd.</span>
-    </div>
-    <h1 class="text-[1.35rem] sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-4 tracking-tighter text-center flex flex-col items-center">
-        <span class="whitespace-nowrap">Empowering Real Estate Business</span>
-        <span class="text-yellow-400 mt-1">With Website,</span>
-        <span class="text-white mt-1">
-            <span class="text-[#4285F4]">G</span><span class="text-[#EA4335]">o</span><span class="text-[#FBBC05]">o</span><span class="text-[#4285F4]">g</span><span class="text-[#34A853]">l</span><span class="text-[#EA4335]">e</span> Listing &
-        </span>
-        <span class="gradient-text mt-1">Next-Gen Software</span>
-    </h1>
-    <p class="text-lg text-gray-300 mb-8 max-w-xl mt-1 text-center">
-        We build high-performance real estate portals, custom CRM software, and intelligent mobile applications equipped with seamless global integrations.
-    </p>
-    <div class="flex flex-wrap gap-3 sm:gap-4 w-full justify-center">
-        <a href="#services" class="bg-secondary text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold uppercase tracking-wider text-[10px] sm:text-sm hover:bg-blue-600 transition shadow-lg shadow-blue-500/40 flex items-center justify-center gap-2">
-            Explore Solutions <i class="fa-solid fa-arrow-right"></i>
-        </a>
-        <a href="#offer" class="bg-transparent border border-gray-400 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold uppercase tracking-wider text-[10px] sm:text-sm hover:bg-white/10 transition flex items-center justify-center">
-            View Special Offers
-        </a>
-    </div>
-</div>
-                    <!-- Integrations Floating Badges (New position) -->
-                    <div class="hidden lg:block relative h-[380px]">
-                        <div class="absolute top-40 left-0 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
-                            <i class="fa-brands fa-whatsapp text-green-500 text-3xl"></i>
-                            <div>
-                                <p class="text-sm font-bold text-gray-800">WhatsApp API</p>
-                                <p class="text-xs text-gray-500">Automated Leads</p>
-                            </div>
+        <section id="home" class="hero-bg pt-32 md:pt-36 lg:pt-40 pb-12 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col items-center">
+                <!-- HERO TEXT & BUTTONS -->
+                <div class="w-full flex flex-col items-center z-20">
+                    <div class="inline-flex items-center justify-center py-1.5 px-5 rounded-full bg-gradient-to-r from-white/5 to-white/10 border border-white/10 shadow-[0_0_20px_rgba(59,130,246,0.15)] backdrop-blur-md mb-5 group hover:bg-white/20 transition-all duration-300 cursor-default">
+                        <span class="text-blue-50 font-semibold text-[10px] sm:text-sm tracking-wide drop-shadow-sm whitespace-nowrap">Real Estate Software Technology Pvt. Ltd.</span>
+                    </div>
+                    <h1 class="text-[1.35rem] sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-4 tracking-tighter text-center flex flex-col items-center">
+                        <span class="whitespace-nowrap">Empowering Real Estate Business</span>
+                        <span class="text-yellow-400 mt-1">With Website,</span>
+                        <span class="text-white mt-1">
+                            <span class="text-[#4285F4]">G</span><span class="text-[#EA4335]">o</span><span class="text-[#FBBC05]">o</span><span class="text-[#4285F4]">g</span><span class="text-[#34A853]">l</span><span class="text-[#EA4335]">e</span> Listing &
+                        </span>
+                        <span class="gradient-text mt-1">Next-Gen Software</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8 max-w-xl mt-1 text-center">
+                        We build high-performance real estate portals, custom CRM software, and intelligent mobile applications equipped with seamless global integrations.
+                    </p>
+                    <div class="flex flex-wrap gap-3 sm:gap-4 w-full justify-center">
+                        <a href="#services" class="bg-secondary text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold uppercase tracking-wider text-[10px] sm:text-sm hover:bg-blue-600 transition shadow-lg shadow-blue-500/40 flex items-center justify-center gap-2">
+                            Explore Solutions <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#offer" class="bg-transparent border border-gray-400 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold uppercase tracking-wider text-[10px] sm:text-sm hover:bg-white/10 transition flex items-center justify-center">
+                            View Special Offers
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Integrations Floating Badges (Fixed absolute position to remove blank gap) -->
+                <div class="hidden lg:block absolute inset-0 pointer-events-none w-full h-full max-w-7xl mx-auto">
+                    <div class="absolute top-24 right-4 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce pointer-events-auto" style="animation-duration: 3s;">
+                        <i class="fa-brands fa-whatsapp text-green-500 text-3xl"></i>
+                        <div>
+                            <p class="text-sm font-bold text-gray-800">WhatsApp API</p>
+                            <p class="text-xs text-gray-500">Automated Leads</p>
                         </div>
-                        <div class="absolute top-40 right-0 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce" style="animation-duration: 4s; animation-delay: 1s;">
-                            <i class="fa-solid fa-credit-card text-purple-500 text-3xl"></i>
-                            <div>
-                                <p class="text-sm font-bold text-gray-800">Payment Gateway</p>
-                                <p class="text-xs text-gray-500">Razorpay, PayPal</p>
-                            </div>
-                        </div>
-                        <div class="absolute bottom-0 left-20 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce" style="animation-duration: 3.5s; animation-delay: 0.5s;">
-                            <i class="fa-solid fa-headset text-blue-500 text-3xl"></i>
-                            <div>
-                                <p class="text-sm font-bold text-gray-800">Call Integration</p>
-                                <p class="text-xs text-gray-500">Cloud Telephony</p>
-                            </div>
+                    </div>
+                    <div class="absolute top-48 left-4 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce pointer-events-auto" style="animation-duration: 4s; animation-delay: 1s;">
+                        <i class="fa-solid fa-credit-card text-purple-500 text-3xl"></i>
+                        <div>
+                            <p class="text-sm font-bold text-gray-800">Payment Gateway</p>
+                            <p class="text-xs text-gray-500">Razorpay, PayPal</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="mt-8 bg-white/5 backdrop-blur-md border border-white/10 py-2 px-4 rounded-xl">
-                    <p class="text-[8px] sm:text-[10px] font-bold text-white/60 uppercase tracking-widest mb-1 text-center">Our Seamless Third-Party Integrations</p>
+                <!-- Seamless Integrations Marquee -->
+                <div class="mt-14 w-full max-w-5xl bg-white/5 backdrop-blur-md border border-white/10 py-3 px-4 rounded-xl z-20">
+                    <p class="text-[10px] sm:text-[13px] font-black text-white uppercase tracking-widest mb-3 text-center drop-shadow-md">Our Seamless Third-Party Integrations</p>
                     <div class="w-full overflow-hidden relative">
                         <div class="animate-marquee">
+                            <!-- Block 1 -->
                             <div class="flex flex-nowrap items-center gap-6 sm:gap-12 px-2 shrink-0">
                                 <div class="flex items-center gap-2 shrink-0"><i class="fa-brands fa-whatsapp text-xl sm:text-2xl" style="color: #25D366;"></i><span class="font-bold text-white text-[10px] sm:text-sm">WhatsApp</span></div>
                                 <div class="flex items-center gap-2 shrink-0"><i class="fa-solid fa-phone-volume text-lg sm:text-xl text-blue-400"></i><span class="font-bold text-white text-[10px] sm:text-sm">Cloud Calling</span></div>
@@ -216,7 +214,7 @@
                                     <span class="font-bold text-white text-[10px] sm:text-sm">Maps API</span>
                                 </div>
                             </div>
-                            <!-- Duplication for seamless loop -->
+                            <!-- Block 2 (Duplicate for seamless loop) -->
                             <div class="flex flex-nowrap items-center gap-6 sm:gap-12 px-2 shrink-0">
                                 <div class="flex items-center gap-2 shrink-0"><i class="fa-brands fa-whatsapp text-xl sm:text-2xl" style="color: #25D366;"></i><span class="font-bold text-white text-[10px] sm:text-sm">WhatsApp</span></div>
                                 <div class="flex items-center gap-2 shrink-0"><i class="fa-solid fa-phone-volume text-lg sm:text-xl text-blue-400"></i><span class="font-bold text-white text-[10px] sm:text-sm">Cloud Calling</span></div>
