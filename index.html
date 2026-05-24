@@ -6,12 +6,6 @@
     <title>Real Estate Software Technology Pvt. Ltd. | Global IT Solutions</title>
     <meta name="description" content="International level software company specializing in real estate portals, CRM, custom apps, and seamless integrations.">
     
-    <!-- FONTS PRELOAD: Yeh mobile par font delay khatam karega -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@900&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome -->
@@ -22,8 +16,8 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        heading: ['Montserrat', 'sans-serif'],
+                        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                        heading: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
                     },
                     colors: {
                         primary: '#1E3A8A',
@@ -37,16 +31,8 @@
     </script>
     
     <style>
-        /* Font Metrics Adjustment to prevent FOUT (Jumping Text) */
-        body { 
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; 
-            font-size-adjust: 0.5; /* Inter metrics match */
-        }
-        h1, h2, h3, h4, h5, h6 { 
-            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; 
-            font-weight: 900 !important; 
-            font-size-adjust: 0.6; /* Montserrat metrics match */
-        }
+        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; }
+        h1, h2, h3, h4, h5, h6 { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; font-weight: 900 !important; }
         
         @keyframes heartbeat { 
             0%, 100% { transform: scale(1); } 
@@ -117,7 +103,7 @@
                     <div class="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center text-xl shadow-md group-hover:bg-secondary transition">
                         <i class="fa-solid fa-house-chimney"></i>
                     </div>
-                    <span class="font-heading text-2xl sm:text-3xl text-gray-900 tracking-tighter">Res<span class="text-primary">tech</span></span>
+                    <span class="font-sans text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tighter">Res<span class="text-primary">tech</span></span>
                 </div>
                 
                 <!-- Desktop Menu -->
@@ -129,7 +115,7 @@
                     <a href="#technologies-page" class="text-gray-700 hover:text-primary font-medium transition whitespace-nowrap">Tech</a>
                     <a href="#pricing" class="text-gray-700 hover:text-primary font-medium transition whitespace-nowrap">Pricing</a>
                     
-                    <a href="#contact" class="bg-primary text-white px-4 xl:px-6 py-2 rounded-full font-heading tracking-widest uppercase text-xs hover:bg-blue-800 transition shadow-lg shadow-blue-500/30 whitespace-nowrap ml-2">Get Quote</a>
+                    <a href="#contact" class="bg-primary text-white px-4 xl:px-6 py-2 rounded-full font-bold tracking-widest uppercase text-xs hover:bg-blue-800 transition shadow-lg shadow-blue-500/30 whitespace-nowrap ml-2">Get Quote</a>
                 </div>
 
                 <!-- Global Nav Tools -->
@@ -175,18 +161,18 @@
                             <span class="gradient-text">Next-Gen Software</span>
                         </h1>
                         <p class="text-lg text-gray-300 mb-8 max-w-xl mt-1">
-                            We build high-performance real estate website, portals, custom CRM software, and intelligent mobile applications equipped with seamless global integrations.
+                            We build high-performance real estate portals, custom CRM software, and intelligent mobile applications equipped with seamless global integrations.
                         </p>
                         <div class="flex flex-nowrap gap-2 sm:gap-4 w-full">
-                            <a href="#services" class="bg-secondary text-white px-2 sm:px-8 py-2.5 sm:py-3 rounded-full font-heading uppercase tracking-wider text-[9px] sm:text-sm hover:bg-blue-600 transition shadow-lg shadow-blue-500/40 flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap flex-1 sm:flex-none">
+                            <a href="#services" class="bg-secondary text-white px-2 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold uppercase tracking-wider text-[9px] sm:text-sm hover:bg-blue-600 transition shadow-lg shadow-blue-500/40 flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap flex-1 sm:flex-none">
                                 Explore Solutions <i class="fa-solid fa-arrow-right"></i>
                             </a>
-                            <a href="#offer" class="bg-transparent border border-gray-400 text-white px-2 sm:px-8 py-2.5 sm:py-3 rounded-full font-heading uppercase tracking-wider text-[9px] sm:text-sm hover:bg-white/10 transition flex items-center justify-center whitespace-nowrap flex-1 sm:flex-none">
+                            <a href="#offer" class="bg-transparent border border-gray-400 text-white px-2 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold uppercase tracking-wider text-[9px] sm:text-sm hover:bg-white/10 transition flex items-center justify-center whitespace-nowrap flex-1 sm:flex-none">
                                 View Special Offers
                             </a>
                         </div>
                     </div>
-                    <!-- Integrations Floating Badges -->
+                    <!-- Integrations Floating Badges (New position) -->
                     <div class="hidden lg:block relative h-[380px]">
                         <div class="absolute top-40 left-0 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
                             <i class="fa-brands fa-whatsapp text-green-500 text-3xl"></i>
@@ -195,7 +181,7 @@
                                 <p class="text-xs text-gray-500">Automated Leads</p>
                             </div>
                         </div>
-                        <div class="absolute top-1/2 right-0 -translate-y-1/2 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce" style="animation-duration: 4s; animation-delay: 1s;">
+                        <div class="absolute top-40 right-0 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce" style="animation-duration: 4s; animation-delay: 1s;">
                             <i class="fa-solid fa-credit-card text-purple-500 text-3xl"></i>
                             <div>
                                 <p class="text-sm font-bold text-gray-800">Payment Gateway</p>
@@ -253,14 +239,14 @@
             </div>
         </section>
         
-        <section id="about" class="pt-12 pb-12 bg-white relative overflow-hidden">
+        <section id="about" class="pt-0 pb-12 bg-white relative overflow-hidden">
             <div class="absolute top-0 right-0 w-64 h-64 bg-blue-50 rounded-full filter blur-[80px] opacity-60"></div>
             <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full filter blur-[80px] opacity-60"></div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center mb-6">
                     <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-2">About <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Restech</span></h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto font-medium">Driving the global digital transformation of the real estate industry through innovative, secure, and scalable tech solutions.</p>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto font-medium">Driving the global digital transformation of the real estate industry through innovative, secure, and scalable Restech solutions.</p>
                 </div>
                 
                 <div class="max-w-5xl mx-auto bg-gradient-to-br from-gray-50 to-white p-6 md:p-12 rounded-[2.5rem] border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.05)] relative overflow-hidden">
@@ -933,8 +919,8 @@
                     <div class="shrink-0 flex flex-col items-center"><div class="flex items-center justify-center relative hover:-translate-y-1 transition"><i class="fa-solid fa-wing text-cyan-300 text-xl absolute -left-2 scale-x-[-1] animate-pulse drop-shadow-sm"></i><i class="fa-brands fa-whatsapp text-[#25D366] text-[28px] relative z-10 drop-shadow-sm bg-white rounded-full"></i><i class="fa-solid fa-wing text-cyan-300 text-xl absolute -right-2 animate-pulse drop-shadow-sm"></i></div></div>
                     <div class="shrink-0 flex flex-col items-center"><div class="bg-gray-800 px-2 py-1 rounded-full flex items-center gap-1 shadow-sm border border-gray-700"><i class="fa-brands fa-whatsapp text-[#25D366] text-[14px]"></i><span class="text-[8px] text-gray-200">Connect</span></div></div>
                     <div class="shrink-0 flex flex-col items-center"><div class="relative flex items-center justify-center group hover:translate-x-1.5 transition-transform"><div class="absolute -left-1.5 w-4 h-5 bg-red-600 rounded-l-full -z-10 group-hover:w-6 group-hover:-left-3 transition-all shadow-sm"></div><div class="bg-white rounded-full shadow-sm border border-gray-100 z-10 group-hover:scale-110 transition-transform"><i class="fa-brands fa-whatsapp text-[#25D366] text-[26px]"></i></div></div></div>
-                    <div class="shrink-0 flex flex-col items-center"><div class="relative flex flex-col items-center group mt-1"><i class="fa-solid fa-hat-chef text-gray-800 text-[20px] absolute -top-2 z-20 group-hover:scale-125 transition drop-shadow-sm"></i><div class="bg-white rounded-full shadow-sm border border-gray-100 mt-1 group-hover:animate-wiggle"><i class="fa-brands fa-whatsapp text-[#25D366] text-[26px]"></i></div></div></div>
-                    <div class="shrink-0 flex flex-col items-center"><div class="relative w-9 h-9 bg-blue-100/60 border border-blue-300 rounded-full flex items-center justify-center shadow-sm group hover:scale-125 hover:bg-white hover:border-green-200 transition-all duration-500 overflow-visible cursor-pointer"><i class="fa-brands fa-whatsapp text-[#25D366] text-[18px] opacity-70 group-hover:opacity-100 group-hover:text-[28px] transition-all duration-500"></i></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><span class="text-[10px] font-extrabold text-gray-400 opacity-30 mb-0.5">29</span><div class="relative flex flex-col items-center group mt-1"><i class="fa-solid fa-hat-chef text-gray-800 text-[20px] absolute -top-2 z-20 group-hover:scale-125 transition drop-shadow-sm"></i><div class="bg-white rounded-full shadow-sm border border-gray-100 mt-1 group-hover:animate-wiggle"><i class="fa-brands fa-whatsapp text-[#25D366] text-[26px]"></i></div></div></div>
+                    <div class="shrink-0 flex flex-col items-center"><span class="text-[10px] font-extrabold text-gray-400 opacity-30 mb-0.5">30</span><div class="relative w-9 h-9 bg-blue-100/60 border border-blue-300 rounded-full flex items-center justify-center shadow-sm group hover:scale-125 hover:bg-white hover:border-green-200 transition-all duration-500 overflow-visible cursor-pointer"><i class="fa-brands fa-whatsapp text-[#25D366] text-[18px] opacity-70 group-hover:opacity-100 group-hover:text-[28px] transition-all duration-500"></i></div></div>
 
                     <!-- SET 2 (Duplicate for Infinite Scroll) -->
                     <div class="shrink-0 flex flex-col items-center"><div class="flex flex-col items-center hover:-translate-y-1 transition-transform"><i class="fa-solid fa-flying-saucer text-gray-600 text-xl drop-shadow-sm"></i><div class="w-0 h-0 border-l-[6px] border-r-[6px] border-b-[10px] border-l-transparent border-r-transparent border-b-green-400/40 mt-0.5"></div><i class="fa-brands fa-whatsapp text-[#25D366] text-xl animate-bounce -mt-1 bg-white rounded-full"></i></div></div>
@@ -1939,7 +1925,7 @@
                     <div class="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none"></div>
                     <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none"></div>
 
-                    <!-- Scrolling Track -->
+                      <!-- Scrolling Track -->
                     <div class="flex animate-scroll-x gap-10 items-center px-4 hover:cursor-pointer">
                         <!-- SET 1 (15 Mini Call Buttons) -->
                         <div class="shrink-0 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition"><i class="fa-solid fa-phone text-white text-sm animate-wiggle"></i></div>
@@ -2176,9 +2162,9 @@
         <!-- Technologies Section -->
         <section id="technologies-page" class="pt-20 pb-24 bg-white border-t border-gray-100 relative z-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
+               <div class="text-center mb-16">
                     <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-primary font-semibold text-sm mb-4 border border-blue-200">Enterprise-Grade Technologie</span>
-                    <h2 class="text-4xl md:text-5xl font-extrabold text-dark mb-4">Built Using <span class="gradient-text">World-Class Engineering Technologies</span></h2>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-dark mb-4">Built Using World-Class <br class="sm:hidden"> <span class="gradient-text">Engineering Technologies</span></h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">We deploy a massive ecosystem of industry-leading programming languages, modern frameworks, and cloud infrastructure. From lightning-fast property searches to military-grade data security, our stack handles millions of global users effortlessly..</p>
                 </div>
 
