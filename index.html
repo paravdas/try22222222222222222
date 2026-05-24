@@ -37,8 +37,16 @@
     </script>
     
     <style>
-        body { font-family: 'Inter', sans-serif !important; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif !important; font-weight: 900 !important; }
+        /* Font Metrics Adjustment to prevent FOUT (Jumping Text) */
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; 
+            font-size-adjust: 0.5; /* Inter metrics match */
+        }
+        h1, h2, h3, h4, h5, h6 { 
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; 
+            font-weight: 900 !important; 
+            font-size-adjust: 0.6; /* Montserrat metrics match */
+        }
         
         @keyframes heartbeat { 
             0%, 100% { transform: scale(1); } 
@@ -1978,8 +1986,10 @@
             <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-600 rounded-full filter blur-[150px] opacity-20 animate-pulse" style="animation-delay: 1s;"></div>
             <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] pointer-events-none"></div>
 
-         <div class="text-center max-w-4xl mx-auto mb-12">
-                   <h2 class="mt-2 font-heading font-black text-[1.1rem] sm:text-4xl md:text-5xl text-white mb-6 drop-shadow-lg">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto mb-12">
+                    <h2 class="inline-block py-1 px-4 rounded-full bg-white/10 text-cyan-300 font-bold text-sm mb-4 border border-white/20 backdrop-blur-md shadow-[0_0_15px_rgba(34,211,238,0.3)]">Custom Development Estimates</h2>
+                    <h2 class="mt-2 font-heading font-black text-[1.1rem] sm:text-4xl md:text-5xl text-white mb-6 drop-shadow-lg">
                         Enterprise Software <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Cost Estimates</span>
                     </h2>
                     <p class="mt-4 max-w-3xl text-sm md:text-lg text-gray-400 mx-auto leading-relaxed px-4">
@@ -2408,7 +2418,7 @@
                             </div>
                             <div class="flex items-start gap-4">
                                 <div class="w-12 h-12 bg-white/10 rounded-full flex-shrink-0 flex items-center justify-center"><i class="fa-solid fa-building text-xl"></i></div>
-                                <div><p class="text-sm text-blue-200">Headquarter</p><p class="font-bold text-lg leading-tight">Manhattan Riviera, Sitapura, Jaipur, Rajasthan<br><span class="text-sm font-normal text-blue-100">India</span></p></div>
+                                <div><p class="text-sm text-blue-200">Headquarter</p><p class="font-bold text-lg leading-tight">Manhattan Riviera ,Sitapura,Jaipur,Rajasthan<br><span class="text-sm font-normal text-blue-100">India</span></p></div>
                             </div>
                         </div>
 
